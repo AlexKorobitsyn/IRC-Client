@@ -55,6 +55,8 @@ def main():
                 try:
                     data = serv_interact.get_response().decode()
                     print(data)
+                    if "PING" in data:
+                        serv_interact.send_to_server("PONG", ":" + data.split(":")[1])
                 except TimeoutError:
                     flag = False
 
