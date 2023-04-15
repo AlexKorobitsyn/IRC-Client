@@ -1,3 +1,4 @@
+from GUI import GraphicalInterface
 from User import UserConfig
 from User import UserInteract
 import server_interact
@@ -5,21 +6,27 @@ import threading
 
 cmd = ""
 
+
+# irc.forestnet.org 6667 #elite-games
+
 def main():
+    app = GraphicalInterface.StartApp()
+    app.mainloop()
     user_interact = UserInteract.UserInteract()
-    user_interact.input_config()
+    user_interact.input_config(app.ip, app.port, app.username, app.password)
     user_interact.output()
 
     user_interact.input_channel_info()
     serv_interact = server_interact.ServerInteract(user_interact.config)
     serv_interact.connect()
-   # serv_interact.set_username()
+    # serv_interact.set_username()
     serv_interact.set_nickname(user_interact.nickname)
     signal = True
+
     def input1():
         while True:
             cmd = input()
-            match cmd:#PONG, TOPIC, NAMES
+            match cmd:  # PONG, TOPIC, NAMES
                 case "JOIN":
                     serv_interact.join_channel(user_interact.channel_name)
                 case "SS":

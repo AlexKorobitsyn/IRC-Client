@@ -7,10 +7,7 @@ class UserInteract:
         self.nickname = None
         self.config = None
 
-    def input_config(self):
-        ip, port = input("Input Server Ip and Port:\n").split(" ")
-        username, password = input("Input Username and Password:\n").split(" ")
-        # Сделать так чтобы username мог содержать пробелы
+    def input_config(self, ip, port, username, password):
         config = UserConfig.UserConfig(ip, port, username, password)
         self.config = config
 
