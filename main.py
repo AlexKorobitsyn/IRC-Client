@@ -1,29 +1,25 @@
-from GUI import GraphicalInterface
+from GUI import StartApp
 from User import UserConfig
 from User import UserInteract
 import server_interact
 import threading
 
-cmd = ""
-
 
 # irc.forestnet.org 6667 #elite-games
 
 def main():
-    app = GraphicalInterface.StartApp()
-    app.mainloop()
-    user_interact = UserInteract.UserInteract()
-    user_interact.input_config(app.ip, app.port, app.username, app.password)
-    user_interact.output()
-
-    user_interact.input_channel_info()
-    serv_interact = server_interact.ServerInteract(user_interact.config)
-    serv_interact.connect()
-    # serv_interact.set_username()
-    serv_interact.set_nickname(user_interact.nickname)
-    signal = True
-
-    def input1():
+    # TODO Норм, то что commands_to_server и receive_from_server находятся в main?
+    # TODO Сделать выбор режима GUI или CUI?
+    # TODO Сделать GUI более читаемым
+    # TODO Сделать порядок кнопок команд, в MainApp, более логичный
+    # TODO Реализовать добавление и создание каналов в channel_bar
+    # TODO мб сделать кнопки через self.seg_button_1.configure(values=["CTkSegmentedButton", "Value 2", "Value 3"])
+    # TODO дизайн GUI
+    # TODO вынести работу с MainApp на отдельный поток
+    # TODO место вывода
+    # TODO разбить работу GUI на более читаемые методы
+    # TODO уйти от логики размещения виджетов через column's и row's
+    def commands_to_server():
         while True:
             cmd = input()
             match cmd:  # PONG, TOPIC, NAMES
@@ -55,7 +51,7 @@ def main():
                 case "":
                     print("Print \"HELP\"")
 
-    def output():
+    def receive_from_server():
         while signal:
             flag = True
             while flag:
@@ -67,8 +63,21 @@ def main():
                 except TimeoutError:
                     flag = False
 
-    th2 = threading.Thread(target=output, daemon=True)
-    th1 = threading.Thread(target=input1)
+    app = StartApp.StartApp()
+    app.mainloop()
+    user_interact = UserInteract.UserInteract()
+    user_interact.input_config(app.user_config)
+    user_interact.output()
+
+    user_interact.input_channel_info()
+    serv_interact = server_interact.ServerInteract(user_interact.config)
+    serv_interact.connect()
+    # serv_interact.set_username()
+    serv_interact.set_nickname(user_interact.nickname)
+    signal = True
+
+    th2 = threading.Thread(target=receive_from_server, daemon=True)
+    th1 = threading.Thread(target=commands_to_server)
     th1.start()
     th2.start()
 
