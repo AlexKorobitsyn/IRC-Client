@@ -7,8 +7,7 @@ class UserInteract:
         self.nickname = None
         self.config = None
 
-    def input_config(self, ip, port, username, password):
-        config = UserConfig.UserConfig(ip, port, username, password)
+    def input_config(self, config):
         self.config = config
 
     def input_channel_info(self):
