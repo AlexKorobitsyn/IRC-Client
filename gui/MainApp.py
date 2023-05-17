@@ -1,6 +1,6 @@
 import tkinter
 import tkinter.messagebox
-from User import UserInteract
+from user import UserInteract
 import customtkinter
 
 customtkinter.set_appearance_mode("Dark")  # Modes: "System" (standard), "Dark", "Light"

@@ -18,7 +18,8 @@ class ServerInteract:
     def take_channel_list(self):
         self.sock.sendall("LIST\r\n".encode())
 
-    def take_names_in_channel(self, channel):
+    def take_names_in_channel(self):
+        channel = input("input channel name:\n")
         self.send_to_server("NAMES", channel)
 
     def write_private_msg(self):

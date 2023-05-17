@@ -1,6 +1,6 @@
 import customtkinter
 
-from User.UserConfig import UserConfig
+from user.UserConfig import UserConfig
 
 customtkinter.set_appearance_mode("Dark")  # Modes: "System" (standard), "Dark", "Light"
 customtkinter.set_default_color_theme("green")  # Themes: "blue" (standard), "green", "dark-blue"
@@ -40,10 +40,10 @@ class StartApp(customtkinter.CTk):
         self.well_known_frame = customtkinter.CTkFrame(self, width=250, height=400, corner_radius=10)
         self.well_known_label = customtkinter.CTkLabel(self.well_known_frame, text="Well known servers",
                                                        font=customtkinter.CTkFont(size=25, weight="bold"))
-        self.well_known_server1_button = customtkinter.CTkButton(self.well_known_frame, text="irc.forestnet.org 6667",
+        self.well_known_server1_button = customtkinter.CTkButton(self.well_known_frame, text="irc.forestnet.org 7000",
                                                                  command=self.well_known_server1_button_event,
                                                                  width=200, height=50)
-        self.well_known_server2_button = customtkinter.CTkButton(self.well_known_frame, text="irc.forestnet.org 6667",
+        self.well_known_server2_button = customtkinter.CTkButton(self.well_known_frame, text="irc.forestnet.org 7000",
                                                                  command=self.well_known_server2_button_event,
                                                                  width=200, height=50)
         self.well_known_server3_button = customtkinter.CTkButton(self.well_known_frame, text="irc.forestnet.org 6667",
@@ -88,19 +88,25 @@ class StartApp(customtkinter.CTk):
         self.connect_button.grid(pady=170, padx=150)
 
     def well_known_server1_button_event(self):
-        self.ip_entry.insert(0, "irc.forestnet.org")
-        self.port_entry.insert(0, "6667")
+        self.ip_entry.delete(0, len(self.ip_entry.get()))  # Удаляем существующий текст
+        self.ip_entry.insert(0, "irc.forestnet.org")  # Вставляем новый текст
+        self.port_entry.delete(0, len(self.ip_entry.get()))  # Удаляем существующий текст
+        self.port_entry.insert(0, "7000")  # Вставляем новый текст
         self.user_config.ip = "irc.forestnet.org"
-        self.user_config.port = "6667"
+        self.user_config.port = "7000"
 
     def well_known_server2_button_event(self):
-        self.ip_entry.insert(0, "irc.forestnet.org")
-        self.port_entry.insert(0, "6667")
+        self.ip_entry.delete(0, len(self.ip_entry.get()))  # Удаляем существующий текст
+        self.ip_entry.insert(0, "irc.forestnet.org")  # Вставляем новый текст
+        self.port_entry.delete(0, len(self.ip_entry.get()))  # Удаляем существующий текст
+        self.port_entry.insert(0, "7000")  # Вставляем новый текст
         self.user_config.ip = "irc.forestnet.org"
-        self.user_config.port = "6667"
+        self.user_config.port = "7000"
 
     def well_known_server3_button_event(self):
+        self.ip_entry.delete(0, len(self.ip_entry.get()))  # Удаляем существующий текст
         self.ip_entry.insert(0, "irc.forestnet.org")
+        self.port_entry.delete(0, len(self.ip_entry.get()))  # Удаляем существующий текст
         self.port_entry.insert(0, "6667")
         self.user_config.ip = "irc.forestnet.org"
         self.user_config.port = "6667"

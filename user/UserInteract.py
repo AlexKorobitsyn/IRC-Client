@@ -1,4 +1,4 @@
-from User import UserConfig
+from user import UserConfig
 
 
 class UserInteract:
