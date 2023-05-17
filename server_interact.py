@@ -15,6 +15,12 @@ class ServerInteract:
         command = "{} {}\r\n".format(cmd, msg).encode()
         self.sock.sendall(command)
 
+    def take_channel_list(self):
+        self.sock.sendall("LIST\r\n".encode())
+
+    def take_names_in_channel(self, channel):
+        self.send_to_server("NAMES", channel)
+
     def write_private_msg(self):
         msg = input("Write your message:")
         address = input("Message for Who?:")
@@ -42,4 +48,5 @@ class ServerInteract:
         self.sock.sendall(command)
 
     def get_response(self):
-        return self.sock.recv(512)
+        gog = self.sock.recv(1024)
+        return gog

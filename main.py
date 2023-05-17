@@ -23,6 +23,10 @@ def main():
         while True:
             cmd = input()
             match cmd:  # PONG, TOPIC, NAMES
+                case "NAMES":
+                    serv_interact.take_names_in_channel()
+                case "LIST":
+                    serv_interact.take_channel_list()
                 case "JOIN":
                     serv_interact.join_channel(user_interact.channel_name)
                 case "SS":
@@ -56,12 +60,14 @@ def main():
             flag = True
             while flag:
                 try:
-                    data = serv_interact.get_response().decode()
+                    data = serv_interact.get_response().decode('cp1251')
                     print(data)
                     if "PING" in data:
                         serv_interact.send_to_server("PONG", ":" + data.split(":")[1])
                 except TimeoutError:
                     flag = False
+                except UnicodeDecodeError:
+                    print("UnicodeError")
 
     app = StartApp.StartApp()
     app.mainloop()
