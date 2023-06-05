@@ -1,8 +1,15 @@
+import os
+
+from playsound import playsound
+
+from logger.Logger import Logger
 class ServerCommunicator:
     def __init__(self, serv_interact, user_interact):
         self.serv_interact = serv_interact
         self.user_interact = user_interact
         self.signal = True
+        self.logger = Logger()
+
 
     def commands_to_server(self, cmd):
         match cmd:
@@ -12,8 +19,9 @@ class ServerCommunicator:
                 self.serv_interact.take_channel_list()
             case "JOIN":
                 self.serv_interact.join_channel(self.user_interact.channel_name)
-            case "SS":
-                print("Hi")
+            case "HISTORY":
+                self.logger.load()
+                self.user_interact.have_history_to_load = True
             case "CHNGNICK":
                 self.user_interact.change_nick()
                 self.serv_interact.set_nickname(self.user_interact.nickname)
@@ -25,9 +33,11 @@ class ServerCommunicator:
             case "PRIVMSG":
                 self.serv_interact.write_private_msg()
             case "QUIT":
+                playsound(os.path.join('audio', 'end.wav'), block=False)
                 self.serv_interact.quit()
                 self.serv_interact.sock.close()
-                signal = False
+                self.signal = False
+                exit(0)
             case "WRITE":
                 command = input("Write command:")
                 arg = input("Write argument:")
@@ -35,16 +45,3 @@ class ServerCommunicator:
             case "":
                 print("Print \"HELP\"")
 
-    def output_from_server(self):
-        while self.signal:
-            flag = True
-            while flag:
-                try:
-                    data = self.serv_interact.get_response().decode('cp1251')
-                    print(data)
-                    if "PING" in data:
-                        self.serv_interact.send_to_server("PONG", ":" + data.split(":")[1])
-                except TimeoutError:
-                    flag = False
-                except UnicodeDecodeError:
-                    print("UnicodeError")

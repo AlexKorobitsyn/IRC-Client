@@ -6,6 +6,7 @@ class UserInteract:
         self.channel_name = None
         self.nickname = None
         self.config = None
+        self.had_history_to_load = False
 
     def input_config(self, config):
         self.config = config
