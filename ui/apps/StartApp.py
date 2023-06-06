@@ -1,5 +1,6 @@
 from customtkinter import *
-
+import asyncio
+from playsound import playsound
 from ui.apps.PopupMsgCreator import PopupMsgCreator
 from user.UserConfig import UserConfig
 
@@ -87,6 +88,7 @@ class StartApp(CTkToplevel):
         self.connect_button.grid(pady=170, padx=150)
 
     def well_known_server1_button_event(self):
+        playsound(os.path.join('audio', 'click.mp3'), block=False)
         self.ip_entry.delete(0, len(self.ip_entry.get()))  # Удаляем существующий текст
         self.ip_entry.insert(0, "irc.forestnet.org")  # Вставляем новый текст
         self.port_entry.delete(0, len(self.ip_entry.get()))  # Удаляем существующий текст
@@ -95,6 +97,7 @@ class StartApp(CTkToplevel):
         self.user_config.port = "7000"
 
     def well_known_server2_button_event(self):
+        playsound(os.path.join('audio', 'click.mp3'), block=False)
         self.ip_entry.delete(0, len(self.ip_entry.get()))  # Удаляем существующий текст
         self.ip_entry.insert(0, "irc.forestnet.org")  # Вставляем новый текст
         self.port_entry.delete(0, len(self.ip_entry.get()))  # Удаляем существующий текст
@@ -103,6 +106,7 @@ class StartApp(CTkToplevel):
         self.user_config.port = "7000"
 
     def well_known_server3_button_event(self):
+        playsound(os.path.join('audio', 'click.mp3'), block=False)
         self.ip_entry.delete(0, len(self.ip_entry.get()))  # Удаляем существующий текст
         self.ip_entry.insert(0, "irc.forestnet.org")
         self.port_entry.delete(0, len(self.ip_entry.get()))  # Удаляем существующий текст
@@ -111,6 +115,7 @@ class StartApp(CTkToplevel):
         self.user_config.port = "6667"
 
     def connect_button_event(self):
+        playsound(os.path.join('audio', 'click.mp3'), block=False)
         self.user_config.ip = self.ip_entry.get()
         self.user_config.port = self.port_entry.get()
         self.user_config.username = self.username_entry.get()

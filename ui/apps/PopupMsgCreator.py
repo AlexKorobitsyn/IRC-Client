@@ -1,4 +1,7 @@
+import os
+
 import customtkinter as ctk
+from playsound import playsound
 
 
 class PopupMsgCreator:
@@ -10,6 +13,7 @@ class PopupMsgCreator:
         PopupMsgCreator.choice = None
 
         def handle_choice(option):
+            playsound(os.path.join('audio', 'click.mp3'), block=False)
             popup.destroy()
             PopupMsgCreator.choice = option
 
