@@ -3,8 +3,8 @@ from IRCClient import IRCClient
 
 # irc.forestnet.org 7000 #elite-games
 
-# TODO сделать репозиторий приватным
-# TODO Реализовать GUI
+# TODO проблема с QUIT, WRITE, PRIVMSG в GUI
+# TODO при закрытии стартового окна не по нажатию Connect че то делать
 # TODO создавать кнопки в окне с помощью цикла: "for button : buttons..."
 # TODO Сделать в output_from_server выбор print или вывод на GUI
 # TODO Сделать README, изменить HELP

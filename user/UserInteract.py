@@ -10,10 +10,6 @@ class UserInteract:
     def input_config(self, config):
         self.config = config
 
-    def input_channel_info(self):
-        self.channel_name = input("Input Channel name:\n")
-        self.nickname = input("Input nickname:\n")
-
     def change_nick(self):
         self.nickname = input("Input new nickname:\n")
 
