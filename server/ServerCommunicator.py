@@ -5,12 +5,15 @@ from playsound import playsound
 from logger.Logger import Logger
 
 
+
+
 class ServerCommunicator:
     def __init__(self, serv_interact, user_interact):
         self.serv_interact = serv_interact
         self.user_interact = user_interact
         self.signal = True
         self.logger = Logger()
+
 
     def commands_to_server(self, cmd):
         match cmd:

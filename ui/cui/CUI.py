@@ -4,6 +4,9 @@ from ui.UserInterface import UserInterface
 from playsound import playsound
 
 
+from ui.UserInterface import UserInterface
+from playsound import playsound
+
 class CUI(UserInterface):
 
     def __init__(self, server_communicator: ServerCommunicator):
@@ -37,3 +40,4 @@ class CUI(UserInterface):
     def input_channel_info(self):
         self.server_communicator.user_interact.channel_name = input("Input Channel name:\n")
         self.server_communicator.user_interact.nickname = input("Input nickname:\n")
+

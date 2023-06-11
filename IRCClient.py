@@ -26,7 +26,6 @@ class IRCClient:
 
     def connect(self):
         self.user_interface.input_channel_info()
-
         self.server_communicator.serv_interact = ServerInteract(self.server_communicator.user_interact.config)
         self.server_communicator.serv_interact.connect()
         self.server_communicator.serv_interact.set_nickname(self.server_communicator.user_interact.nickname)
