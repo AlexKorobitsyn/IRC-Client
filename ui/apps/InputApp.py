@@ -1,13 +1,14 @@
 from tkinter import Tk, Text, Entry, Button, messagebox
 from customtkinter import CTkToplevel
 
+from server.AbstractSpeaker import AbstractSpeaker
 from server.ServerCommunicator import ServerCommunicator
 
 
 class InputApp(CTkToplevel):
-    def __init__(self, root, server_communicator: ServerCommunicator):
+    def __init__(self, root, speaker: AbstractSpeaker):
         super().__init__(root)
-        self.server_communicator = server_communicator
+        self.speaker = speaker
 
         # configure window
         self.title("Input App")
@@ -24,4 +25,4 @@ class InputApp(CTkToplevel):
     def send_command(self):
         command = self.input_entry.get()
         self.input_entry.delete(0, 'end')
-        self.server_communicator.commands_to_server(command)
+        self.speaker.commands_to_server(command)

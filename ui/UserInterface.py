@@ -2,8 +2,8 @@ from abc import ABC, abstractmethod
 
 
 class UserInterface(ABC):
-    def __init__(self, server_communicator):
-        self.server_communicator = server_communicator
+    def __init__(self, speaker):
+        self.speaker = speaker
 
     @abstractmethod
     def display_output(self):

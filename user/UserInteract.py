@@ -11,11 +11,11 @@ class UserInteract:
     def input_config(self, config):
         self.config = config
 
-    def change_nick(self):
-        self.nickname = input("Input new nickname:\n")
+    def change_nick(self, nickname):
+        self.nickname = nickname
 
-    def change_channel(self):
-        self.channel_name = input("Input new Channel name:\n")
+    def change_channel(self, channel_name):
+        self.channel_name = channel_name
 
     def output(self):
         print(f"Ip: {self.config.ip} \nPort: {self.config.port}")
