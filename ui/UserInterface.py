@@ -12,3 +12,7 @@ class UserInterface(ABC):
     @abstractmethod
     def display_input(self):
         pass
+
+    @abstractmethod
+    def input_channel_info(self):
+        pass

@@ -1,10 +1,15 @@
 import os
+from server.ServerCommunicator import ServerCommunicator
+from ui.UserInterface import UserInterface
+from playsound import playsound
+
 
 from ui.UserInterface import UserInterface
 from playsound import playsound
 
 class CUI(UserInterface):
-    def __init__(self, server_communicator):
+
+    def __init__(self, server_communicator: ServerCommunicator):
         super().__init__(server_communicator)
 
     def display_input(self):
@@ -21,15 +26,18 @@ class CUI(UserInterface):
             flag = True
             while flag:
                 try:
-                    data = self.server_communicator.serv_interact.get_response().decode('cp1251')
+                    data = self.server_communicator.get_server_response()
                     playsound(os.path.join('audio', 'msg.wav'), block=False)
                     self.server_communicator.logger.save(data)
                     print(data)
-                    if "PING" in data:
-                        self.server_communicator.serv_interact.send_to_server("PONG", ":" + data.split(":")[1])
                 except TimeoutError:
                     flag = False
                 except OSError:
                     flag = False
                 except UnicodeDecodeError:
                     print("UnicodeError")
+
+    def input_channel_info(self):
+        self.server_communicator.user_interact.channel_name = input("Input Channel name:\n")
+        self.server_communicator.user_interact.nickname = input("Input nickname:\n")
+

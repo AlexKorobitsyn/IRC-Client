@@ -25,11 +25,12 @@ class IRCClient:
         receive_thread.start()
 
     def connect(self):
-        self.server_communicator.user_interact.input_channel_info()
+        self.user_interface.input_channel_info()
         self.server_communicator.serv_interact = ServerInteract(self.server_communicator.user_interact.config)
         self.server_communicator.serv_interact.connect()
         self.server_communicator.serv_interact.set_nickname(self.server_communicator.user_interact.nickname)
         self.server_communicator.serv_interact.set_username(self.server_communicator.user_interact.config.username)
+        self.server_communicator.serv_interact.join_channel(self.server_communicator.user_interact.channel_name)
 
     def start_app_iteration(self):
         playsound(os.path.join('audio', 'start.mp3'), block=False)
@@ -40,12 +41,12 @@ class IRCClient:
     def choose_interface(self):
         interface = self.gui_controller.popup_msg_creator.create_choice_of_two_options(
             "В каком интерфейсе продолжим?",
-            "GUI",
-            "CUI"
+            "CUI",
+            "GUI"
         )
         match interface:
             case "GUI":
-                self.user_interface = GUI(self.server_communicator, self.gui_controller.main_app)
+                self.user_interface = GUI(self.server_communicator, self.gui_controller)
             case "CUI":
                 self.user_interface = CUI(self.server_communicator)
 
