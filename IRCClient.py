@@ -1,3 +1,4 @@
+import os
 import threading
 
 from server.ServerCommunicator import ServerCommunicator
@@ -6,6 +7,7 @@ from ui.gui.GUI import GUI
 from ui.gui.GUIController import GUIController
 from server.ServerInteract import ServerInteract
 from user.UserInteract import UserInteract
+from playsound import playsound
 
 
 class IRCClient:
@@ -32,6 +34,7 @@ class IRCClient:
         self.server_communicator.serv_interact.join_channel(self.server_communicator.user_interact.channel_name)
 
     def start_app_iteration(self):
+        playsound(os.path.join('audio', 'start.mp3'), block=False)
         self.gui_controller.start_app.wait_window()  # Ожидание закрытия окна start_app
         self.server_communicator.user_interact.input_config(self.gui_controller.start_app.user_config)
         self.server_communicator.user_interact.output()

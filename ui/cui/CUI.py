@@ -1,5 +1,7 @@
+import os
 from server.ServerCommunicator import ServerCommunicator
 from ui.UserInterface import UserInterface
+from playsound import playsound
 
 
 class CUI(UserInterface):
@@ -14,10 +16,16 @@ class CUI(UserInterface):
 
     def display_output(self):
         while self.server_communicator.signal:
+            if self.server_communicator.logger.data_from_history != "":
+                print(self.server_communicator.logger.data_from_history)
+                self.server_communicator.logger.data_from_history = ""
+                self.server_communicator.user_interact.had_history_to_load = False
             flag = True
             while flag:
                 try:
                     data = self.server_communicator.get_server_response()
+                    playsound(os.path.join('audio', 'msg.wav'), block=False)
+                    self.server_communicator.logger.save(data)
                     print(data)
                 except TimeoutError:
                     flag = False
