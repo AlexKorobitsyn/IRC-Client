@@ -5,9 +5,9 @@ from server.ServerCommunicator import ServerCommunicator
 
 
 class OutputApp(CTkToplevel):
-    def __init__(self, root, server_communicator: ServerCommunicator):
+    def __init__(self, root, speaker):
         super().__init__(root)
-        self.server_communicator = server_communicator
+        self.speaker = speaker
         self.title("OutputApp")
         self.geometry("800x600")
 
@@ -20,7 +20,7 @@ class OutputApp(CTkToplevel):
 
     def get_server_response(self):
         try:
-            data = self.server_communicator.get_server_response()
+            data = self.speaker.get_server_response()
             self.display_message(data)
         except TimeoutError:
             pass

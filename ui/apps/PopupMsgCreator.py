@@ -1,4 +1,5 @@
 import os
+from tkinter import Tk, simpledialog
 
 import customtkinter as ctk
 from playsound import playsound
@@ -50,5 +51,6 @@ class PopupMsgCreator:
 
 
 if __name__ == '__main__':
-    p = PopupMsgCreator()
-    p.create_choice_of_two_options("34", "23523", "235")
+    root = Tk()
+    root.withdraw()
+    print(simpledialog.askstring("Input", "Enter channel name:"))

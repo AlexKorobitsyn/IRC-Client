@@ -1,34 +1,35 @@
 import os
+
+from server.AbstractSpeaker import AbstractSpeaker
 from server.ServerCommunicator import ServerCommunicator
 from ui.UserInterface import UserInterface
 from playsound import playsound
 
-
 from ui.UserInterface import UserInterface
 from playsound import playsound
 
-class CUI(UserInterface):
 
-    def __init__(self, server_communicator: ServerCommunicator):
-        super().__init__(server_communicator)
+class CUI(UserInterface):
+    def __init__(self, speaker: AbstractSpeaker):
+        super().__init__(speaker)
 
     def display_input(self):
         while True:
             cmd = input()
-            self.server_communicator.commands_to_server(cmd)
+            self.speaker.commands_to_server(cmd)
 
     def display_output(self):
-        while self.server_communicator.signal:
-            if self.server_communicator.logger.data_from_history != "":
-                print(self.server_communicator.logger.data_from_history)
-                self.server_communicator.logger.data_from_history = ""
-                self.server_communicator.user_interact.had_history_to_load = False
+        while self.speaker.signal:
+            if self.speaker.logger.data_from_history != "":
+                print(self.speaker.logger.data_from_history)
+                self.speaker.logger.data_from_history = ""
+                self.speaker.user_interact.had_history_to_load = False
             flag = True
             while flag:
                 try:
-                    data = self.server_communicator.get_server_response()
+                    data = self.speaker.get_server_response()
                     playsound(os.path.join('audio', 'msg.wav'), block=False)
-                    self.server_communicator.logger.save(data)
+                    self.speaker.logger.save(data)
                     print(data)
                 except TimeoutError:
                     flag = False
@@ -38,6 +39,5 @@ class CUI(UserInterface):
                     print("UnicodeError")
 
     def input_channel_info(self):
-        self.server_communicator.user_interact.channel_name = input("Input Channel name:\n")
-        self.server_communicator.user_interact.nickname = input("Input nickname:\n")
-
+        self.speaker.user_interact.channel_name = input("Input Channel name:\n")
+        self.speaker.user_interact.nickname = input("Input nickname:\n")
