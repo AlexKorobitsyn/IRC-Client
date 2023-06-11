@@ -12,19 +12,16 @@ class ServerInteract:
         self.sock.settimeout(0.2)
 
     def send_to_server(self, cmd, msg=""):
-        command = "{} {}\r\n".format(cmd, msg).encode()
+        command = f"{cmd} {msg}\r\n".encode()
         self.sock.sendall(command)
 
     def take_channel_list(self):
         self.sock.sendall("LIST\r\n".encode())
 
-    def take_names_in_channel(self):
-        channel = input("input channel name:\n")
+    def take_names_in_channel(self, channel):
         self.send_to_server("NAMES", channel)
 
-    def write_private_msg(self):
-        msg = input("Write your message:")
-        address = input("Message for Who?:")
+    def write_private_msg(self, address, msg):
         command = "PRIVMSG " + address + " :"
         self.send_to_server(command, msg)
 
@@ -34,7 +31,6 @@ class ServerInteract:
 
     def quit(self):
         self.send_to_server("QUIT", "Good bye!")  # TODO почему одно слово только???
-        print("Quitting ...")
 
     def set_password(self):
         command = "PASS"

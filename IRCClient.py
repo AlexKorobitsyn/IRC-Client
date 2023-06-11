@@ -1,6 +1,8 @@
 import os
 import threading
 
+from server.GraphicSpeaker import GraphicSpeaker
+from server.CommandSpeaker import CommandSpeaker
 from server.ServerCommunicator import ServerCommunicator
 from ui.cui.CUI import CUI
 from ui.gui.GUI import GUI
@@ -12,7 +14,7 @@ from playsound import playsound
 
 class IRCClient:
     def __init__(self):
-        self.server_communicator = ServerCommunicator(None, UserInteract())
+        self.server_communicator = None
         self.gui_controller = GUIController()
         self.user_interface = None
 
@@ -26,17 +28,19 @@ class IRCClient:
 
     def connect(self):
         self.user_interface.input_channel_info()
-        self.server_communicator.serv_interact = ServerInteract(self.server_communicator.user_interact.config)
         self.server_communicator.serv_interact.connect()
         self.server_communicator.serv_interact.set_nickname(self.server_communicator.user_interact.nickname)
         self.server_communicator.serv_interact.set_username(self.server_communicator.user_interact.config.username)
         self.server_communicator.serv_interact.join_channel(self.server_communicator.user_interact.channel_name)
 
-    def start_app_iteration(self):
+    def get_user_config(self):
         playsound(os.path.join('audio', 'start.mp3'), block=False)
         self.gui_controller.start_app.wait_window()  # Ожидание закрытия окна start_app
-        self.server_communicator.user_interact.input_config(self.gui_controller.start_app.user_config)
-        self.server_communicator.user_interact.output()
+        user_interact = UserInteract()
+        user_interact.input_config(self.gui_controller.start_app.user_config)
+        serv_interact = ServerInteract(user_interact.config)
+
+        self.server_communicator = ServerCommunicator(serv_interact, user_interact)
 
     def choose_interface(self):
         interface = self.gui_controller.popup_msg_creator.create_choice_of_two_options(
@@ -46,18 +50,17 @@ class IRCClient:
         )
         match interface:
             case "GUI":
-                self.user_interface = GUI(self.server_communicator, self.gui_controller)
+                self.server_communicator.speaker = \
+                    GraphicSpeaker(self.server_communicator.serv_interact, self.server_communicator.user_interact)
+                self.user_interface = GUI(self.server_communicator.speaker, self.gui_controller)
             case "CUI":
-                self.user_interface = CUI(self.server_communicator)
+                self.server_communicator.speaker = \
+                    CommandSpeaker(self.server_communicator.serv_interact, self.server_communicator.user_interact)
+                self.user_interface = CUI(self.server_communicator.speaker)
 
     def run(self):
-        self.start_app_iteration()
+        self.get_user_config()
         self.choose_interface()
         self.connect()
         self.start_input_thread()
         self.start_output_thread()
-
-
-if __name__ == '__main__':
-    irc_client = IRCClient()
-    irc_client.run()
