@@ -1,16 +1,25 @@
 import os
+import sys
 import time
 
 from playsound import playsound
 from server.AbstractSpeaker import AbstractSpeaker
 import customtkinter as ctk
 
+from ui.apps.HelpApp import HelpApp
 from ui.apps.QuestionApp import QuestionApp
 
 
 class GraphicSpeaker(AbstractSpeaker):
+
     def __init__(self, serv_interact, user_interact):
         super().__init__(serv_interact, user_interact)
+
+    def help_action(self, text):
+        root = ctk.CTk()
+        root.withdraw()
+        help_app = HelpApp(root, text)
+        help_app.wait_window()
 
     def names_action(self):
         channel = self.get_input("Enter channel name:")
@@ -26,7 +35,6 @@ class GraphicSpeaker(AbstractSpeaker):
         self.serv_interact.quit()
         self.serv_interact.sock.close()
         self.signal = False
-        print("Quitting ...")
         exit(0)
 
     def write_action(self):
@@ -46,11 +54,8 @@ class GraphicSpeaker(AbstractSpeaker):
 
     @staticmethod
     def get_input(prompt):
-        try:
-            root = ctk.CTk()
-            root.withdraw()
-            question = QuestionApp(root, prompt)
-            root.wait_window(question)
-            return question.get_answer()
-        except Exception:
-            pass
+        root = ctk.CTk()
+        root.withdraw()
+        question = QuestionApp(root, prompt)
+        root.wait_window(question)
+        return question.get_answer()

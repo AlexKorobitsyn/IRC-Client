@@ -18,14 +18,6 @@ class IRCClient:
         self.gui_controller = GUIController()
         self.user_interface = None
 
-    def start_input_thread(self):
-        input_thread = threading.Thread(target=self.user_interface.display_input)
-        input_thread.start()
-
-    def start_output_thread(self):
-        receive_thread = threading.Thread(target=self.user_interface.display_output, daemon=True)
-        receive_thread.start()
-
     def connect(self):
         self.user_interface.input_channel_info()
         self.server_communicator.serv_interact.connect()
@@ -62,5 +54,7 @@ class IRCClient:
         self.get_user_config()
         self.choose_interface()
         self.connect()
-        self.start_input_thread()
-        self.start_output_thread()
+        self.run_interface()
+
+    def run_interface(self):
+        self.user_interface.start()

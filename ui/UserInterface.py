@@ -6,11 +6,7 @@ class UserInterface(ABC):
         self.speaker = speaker
 
     @abstractmethod
-    def display_output(self):
-        pass
-
-    @abstractmethod
-    def display_input(self):
+    def start(self):
         pass
 
     @abstractmethod
