@@ -1,7 +1,9 @@
+import os
 from tkinter import Tk, Text, Entry, Button, messagebox, Scrollbar
 from customtkinter import CTkToplevel
 from server.AbstractSpeaker import AbstractSpeaker
 from server.ServerCommunicator import ServerCommunicator
+from playsound import playsound
 
 
 class ChatApp(CTkToplevel):
@@ -29,6 +31,7 @@ class ChatApp(CTkToplevel):
         self.after(1, self.get_server_response)
 
     def send_command(self):
+        playsound(os.path.join('audio', 'click.mp3'), block=False)
         command = self.input_entry.get()
         self.input_entry.delete(0, 'end')
         self.speaker.commands_to_server(command)
@@ -51,6 +54,7 @@ class ChatApp(CTkToplevel):
 
     def display_message(self, message):
         # Отображаем сообщение в текстовом поле
+        playsound(os.path.join('audio', 'msg.wav'), block=False)
         self.message_text.configure(state="normal")
         self.message_text.insert("end", message + "\n")
         self.message_text.see("end")  # Прокручиваем текстовое поле до конца
