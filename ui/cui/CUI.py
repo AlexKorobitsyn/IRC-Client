@@ -1,4 +1,5 @@
 import os
+import threading
 
 from server.AbstractSpeaker import AbstractSpeaker
 from server.ServerCommunicator import ServerCommunicator
@@ -10,8 +11,13 @@ from playsound import playsound
 
 
 class CUI(UserInterface):
+
     def __init__(self, speaker: AbstractSpeaker):
         super().__init__(speaker)
+
+    def start(self):
+        self.start_input_thread()
+        self.start_output_thread()
 
     def display_input(self):
         while True:
@@ -41,3 +47,11 @@ class CUI(UserInterface):
     def input_channel_info(self):
         self.speaker.user_interact.channel_name = input("Input Channel name:\n")
         self.speaker.user_interact.nickname = input("Input nickname:\n")
+
+    def start_input_thread(self):
+        input_thread = threading.Thread(target=self.display_input)
+        input_thread.start()
+
+    def start_output_thread(self):
+        receive_thread = threading.Thread(target=self.display_output, daemon=True)
+        receive_thread.start()

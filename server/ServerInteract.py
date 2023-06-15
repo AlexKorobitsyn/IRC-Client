@@ -30,8 +30,7 @@ class ServerInteract:
         self.send_to_server(command, channel)
 
     def quit(self):
-        self.send_to_server("QUIT", "Good bye!")  # TODO почему одно слово только???
-        exit(0)
+        self.send_to_server("QUIT", "Good bye!")
 
     def set_password(self):
         command = "PASS"

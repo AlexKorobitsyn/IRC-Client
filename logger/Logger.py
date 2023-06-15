@@ -2,7 +2,6 @@ import os
 import datetime
 
 
-
 class Logger:
     def __init__(self):
         self.path = os.path.join("logger", "log.txt")

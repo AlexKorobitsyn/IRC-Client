@@ -4578,3 +4578,786 @@ orestnet.org/
 :Forest!equal@forestnet NOTICE mitya :[Logon News - Aug 17 2011] Now you're required to provide *REAL* email when registering new nicknames (mandatory confirmation procedure). Max 3 nicks per email. Nickname/Channel expiration time was changed to 180 days.
 :Forest!equal@forestnet NOTICE mitya :[Logon News - Nov 22 2013] For a ForestNet statistics site refer to http://stats.forestnet.org/ (Only modern, HTML5/CSS3 enabled browsers supported. No IE. kthnxbai;)
 :Forest!equal@forestnet NOTICE mitya :[Logon News - Sep 21 2015] We are switchin' step by step to unicode on port 6667, new basic port for cp1251 = 7000
+
+2023-06-12 19:43:02.100058:
+:ural.forestnet.org NOTICE AUTH :*** Looking up your hostname...
+
+2023-06-12 19:43:02.280835:
+:ural.forestnet.org NOTICE AUTH :*** Found your hostname
+
+2023-06-12 19:43:02.339757:
+:ural.forestnet.org NOTICE fadsg :*** Notice -- Your hostname has been masked with non-ssl scheme
+:ural.forestnet.org NOTICE fadsg :*** Notice -- You have connected on 7000 port with cp1251 mapping
+:ural.forestnet.org 001 fadsg :Welcome to the ForestNet IRC Network fadsg!~sfd@194.226.244.10
+:ural.forestnet.org 002 fadsg :Your host is ural.forestnet.org, running version Pride-2.2(21)
+:ural.forestnet.org 003 fadsg :This server was created 02/19/15 04:48 04:48:00 AM  -0500 EST 1424339280
+:ural.forestnet.org 004 fadsg ural.forestnet.org Pride-2.2(21) aAbcdefFghiIjkKmnoOrRSstwxy ABbcefHiIjklLmMnoOpPQrRsStUvZ
+:ural.forestnet.org 005 fadsg NETWORK=ForestNet SAFELIST MAXBANS=500 MAXCHANNELS=40 CHANNELLEN=32 KICKLEN=800 NICKLEN=60 TOPICLEN=800 MODES=6 CHANTYPES=# CHANLIMIT=#:40 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ :are available on this server
+:ural.forestnet.org 005 fadsg CASEMAPPING=ascii WATCH=128 SILENCE=10 ELIST=cmntu EXCEPTS INVEX CHANMODES=beI,k,jl,ciABfHmMnNOpPQRrSstUWZ MAXLIST=b:500,e:225,I:225 TARGMAX=
+2023-06-12 19:43:02.387088:
+DCCALLOW:,JOIN:,KICK:4,KILL:20,NOTICE:20,PART:,PRIVMSG:20,WHOIS:,WHOWAS: :are available on this server
+:ural.forestnet.org 005 fadsg CHARSET=utf-8,* EQUALNICK :are available on this server
+:ural.forestnet.org 251 fadsg :There are 10 users and 51 invisible on 4 servers
+:ural.forestnet.org 252 fadsg 1 :irc operators online
+:ural.forestnet.org 253 fadsg 2864 :unknown connection(s)
+:ural.forestnet.org 254 fadsg 92 :channels formed
+:ural.forestnet.org 255 fadsg :I have 18 clients and 1 servers
+:ural.forestnet.org 265 fadsg :Current local users: 18 Max: 448
+:ural.forestnet.org 266 fadsg :Current global users: 61 Max: 593
+:ural.forestnet.org NOTICE fadsg :*** Notice -- motd was last changed at 5/10/2015 7:39
+:ural.forestnet.org 375 fadsg :- ural.forestnet.org Message of the Day - 
+:ural.forestnet.org 372 fadsg :- 12/6/2023 14:43
+:ural.forestnet.org 372 fadsg :-  ==============================:[5Welcome to Wonderland of irc.forestnet.org]:=
+:ural.forestnet.org 372 fadsg :-  9.::::::::              
+2023-06-12 19:43:02.433860:
+                     .::   .:::     .::            .::  
+:ural.forestnet.org 372 fadsg :-  9.::                                         .::   .: .::   .::            .::  
+:ural.forestnet.org 372 fadsg :-  9.::       .:::.  .: .:::.  .:::.    .:::. .:.:::. .:: .::  .::   .:::.  .:.:::.
+:ural.forestnet.org 372 fadsg :-  9.:::::: .:     :. .::    .:     :. .::      .::   .::  .:: .:: .:     :.  .::  
+:ural.forestnet.org 372 fadsg :-  9.::     ::     :: .::    :::::::::  ':::.   .::   .::   .: .:: :::::::::  .::  
+:ural.forestnet.org 372 fadsg :-  9.::     ':     :' .::    ':             ::  .::   .::    .: :: ':         .::  
+:ural.forestnet.org 372 fadsg :-  9.::       ':::'  .:::      '::::'   ':::'    '::' .::      .::   '::::'    '::'
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-  -:[5Codepages on ports]:------------------------------------------------------
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-     14 6668: koi8r
+:
+2023-06-12 19:43:02.455287:
+ural.forestnet.org 372 fadsg :-     3 6662: unicode              7 6669: cp1251             
+:ural.forestnet.org 372 fadsg :-     3 6667: unicode              7 7000: cp1251             14 6670: us_ascii
+:ural.forestnet.org 372 fadsg :-    3 +6697: SSL unicode         7 +7325: SSL cp1251        14 +7326: SSL us_ascii
+:ural.forestnet.org 372 fadsg :-     
+:ural.forestnet.org 372 fadsg :-   Type /charset for list of all supported charsets on Network.
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-  =============================================================:[5Server info]:=
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-   Please note that on connection  to this server, your machine may be scanned
+:ural.forestnet.org 372 fadsg :-   for misconfigured (open) proxies. Open proxies are not permitted in our IRC
+:ural.forestnet.org 372 fadsg :-   Network.
+:ural.forestnet.org 372 fadsg :-   If you object to this policy please leave immediatly.
+:
+2023-06-12 19:43:02.503387:
+ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-   9GOLDEN RULE:
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-     - No spamming, flooding or linklooking.
+:ural.forestnet.org 372 fadsg :-     - No clones or virtual clones allowed.
+:ural.forestnet.org 372 fadsg :-     - No abusive bots/scripts/bncs or open proxies.
+:ural.forestnet.org 372 fadsg :-     - No XDCC bots, this is not a warez network.
+:ural.forestnet.org 372 fadsg :-     - No racism or bigotry, offenders will be banned.
+:ural.forestnet.org 372 fadsg :-     - Channel ban evasion will not be tolerated.
+:ural.forestnet.org 372 fadsg :-  -----------------------------------------------------------------------------
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-  5Please visit ForestNet:
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-    Official site:                                 13http://www.forestnet.org/
+:ural.forestnet.org 372 fadsg :-    IRC web
+2023-06-12 19:43:02.525417:
+-gate:                                  13http://chat.forestnet.org/
+:ural.forestnet.org 372 fadsg :-    Network Forum:                                 13http://forum.forestnet.org/
+:ural.forestnet.org 372 fadsg :-    Network Statistics:                            13http://stats.forestnet.org/
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-  Forum administrative contact:                    11<forum@forestnet.org>
+:ural.forestnet.org 372 fadsg :-  Abuse reports:                                   11<abuse@forestnet.org>
+:ural.forestnet.org 372 fadsg :-  Got KLINEd/AKILLed?                              11<kline@forestnet.org>
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-  =:[5Channels info]:===========================================================
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-  Contacting Network Staff:
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-   14#forest
+:ural.for
+2023-06-12 19:43:02.574892:
+estnet.org 372 fadsg :-       - is the official link and administrative staff channel at ForestNet,
+:ural.forestnet.org 372 fadsg :-         abusive reports, link offers etc should be discussed in the channel.
+:ural.forestnet.org 372 fadsg :-   14#help
+:ural.forestnet.org 372 fadsg :-       - is the official  help channel at ForestNet, all network services
+:ural.forestnet.org 372 fadsg :-         usage questions should be asked there.
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-  There is a plenty of channels at ForestNet:
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-   14#BuKTopuHa
+:ural.forestnet.org 372 fadsg :-   14#rusisrael_trivia
+:ural.forestnet.org 372 fadsg :-       - is popular irc on-line games.
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-   14#ukraine
+:ural.forestnet.org 372 fadsg :-   14#love
+:ural.forestnet.org 372 fadsg :-       - general chat channels.
+:ural.forestnet.or
+2023-06-12 19:43:02.628909:
+g 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-   14#php
+:ural.forestnet.org 372 fadsg :-       - programming help channel.
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-   14#nix
+:ural.forestnet.org 372 fadsg :-       - is linux/freebsd/unix/solaris/macosx and etc channel.
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-   14#music
+:ural.forestnet.org 372 fadsg :-       - Music related talks, official radio channel
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-   14#sysadminz.ru
+:ural.forestnet.org 372 fadsg :-       - System administration, networking, Cisco vs. Huawei holywars,
+:ural.forestnet.org 372 fadsg :-         and other related discussion.
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-   14#russf
+:ural.forestnet.org 372 fadsg :-       - Russian sci-fi related channel
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-  And many-many more! Type 
+2023-06-12 19:43:02.680923:
+/list ;-)
+:ural.forestnet.org 372 fadsg :- 
+:ural.forestnet.org 372 fadsg :-  ---------------------------------------------------------------------:[5End]:-
+:ural.forestnet.org 376 fadsg :End of /MOTD command.
+:ural.forestnet.org NOTICE fadsg :*** Notice -- This server runs an open proxy monitor to prevent abuse.
+:ural.forestnet.org NOTICE fadsg :*** Notice -- If you see connections on various ports from ural.forestnet.org
+:ural.forestnet.org NOTICE fadsg :*** Notice -- please disregard them, as they are the monitor in action.
+:ural.forestnet.org NOTICE fadsg :*** Notice -- For more information please visit http://kline.forestnet.org/proxy/
+:fadsg MODE fadsg :+i
+:fadsg!~sfd@194.226.244.1543 JOIN :#prog-rock
+:ural.forestnet.org 332 fadsg #prog-rock :Ватерса с 76-летием! || Гилмора с ДР! 73! || Хэммила с юбилеем! || grows up our Plant... 70! || Яну Андерсону 71! || Ринго очень старр! 78! || Гоп! Хэй-гоп! Маккартни -- 76! || Э.Латимеру -- 69! || Р.Фриппу -- 73! || Ричи нашему Блэкмору -- 73! || Ро
+2023-06-12 19:43:02.729381:
+берту Энтони Планту 69! || !70 лет нашему Джетро Андерсону! || Waters'17: 2 июн
+:ural.forestnet.org 333 fadsg #prog-rock Злой Олежек 1567761535
+:ural.forestnet.org 353 fadsg = #prog-rock :fadsg ryog_ Yuh-Joh @AlexZenon 
+:ural.forestnet.org 366 fadsg #prog-rock :End of /NAMES list.
+:Forest!equal@forestnet NOTICE fadsg :[Logon News - Aug 17 2011] Now you're required to provide *REAL* email when registering new nicknames (mandatory confirmation procedure). Max 3 nicks per email. Nickname/Channel expiration time was changed to 180 days.
+:Forest!equal@forestnet NOTICE fadsg :[Logon News - Nov 22 2013] For a ForestNet statistics site refer to http://stats.forestnet.org/ (Only modern, HTML5/CSS3 enabled browsers supported. No IE. kthnxbai;)
+:Forest!equal@forestnet NOTICE fadsg :[Logon News - Sep 21 2015] We are switchin' step by step to unicode on port 6667, new basic port for cp1251 = 7000
+
+2023-06-12 19:43:09.313525:
+:ural.forestnet.org 353 fadsg = #elite-games :
+:ural.forestnet.org 366 fadsg #elite-games :End of /NAMES list.
+
+2023-06-12 19:43:12.233944:
+:ural.forestnet.org 321 fadsg Channel :Users Mode Name
+:ural.forestnet.org 322 fadsg #ELIC 1 :[+tnrc ]  Канал фильма "Приключения электроника" ; официальный сайт фильма http://elfilm.narod.ru - //- Давайте общаться друзья !! :-)
+:ural.forestnet.org 322 f
+2023-06-12 19:43:12.280447:
+adsg #help 7 :[+tnr ]  ForestNet support channel * Don't ask to ask; just ask * To register nick type: /ns register pAsSwOrD email@addre.ss ; Channel: /cs register #channel pAsSwOrD description * Set services languages to english: /ns set language 1 * General help: /cs help, /ns help, /help, /helpop and /ircops for active IRCops || http://chat.forestnet.org - Unsecure WEBChat || https://localhost/~forestnet/
+:ural.forestnet.org 322 fadsg #rusisrael_trivia 1 :[+tr ]  Тривия сайта Rusisrael
+:ural.forestnet.org 322 fadsg #ALEXD 1 :[+ ]  
+:ural.forestnet.org 322 fadsg #ukraine_new 1 :[+inr ]  Всё, что вы хотели знать о Германии, РФ, США и Украине: 0. https://youtu.be/1A0VC9A0eIg 1. https://youtu.be/IGZSiwOl47A || Всё, что вам нужно знать о США и Ближнем Востоке 0. https://youtu.be/UcmTa7LT7_M 1. https://youtu.be/9zkMf9PGSgQ ||
+:ural.forestnet.org 322 fadsg #stat 1 :[+ ]  
+:ural.forestnet.org 322 fadsg #wipe 1 :[+ ]  
+:ural.forestnet.org 322 fadsg #prog-rock 4 :[+tnr ]  Ватерса с 76-летие
+2023-06-12 19:43:12.327766:
+м! || Гилмора с ДР! 73! || Хэммила с юбилеем! || grows up our Plant... 70! || Яну Андерсону 71! || Ринго очень старр! 78! || Гоп! Хэй-гоп! Маккартни -- 76! || Э.Латимеру -- 69! || Р.Фриппу -- 73! || Ричи нашему Блэкмору -- 73! || Роберту Энтони Планту 69! || !70 лет нашему Джетро Андерсону! || Waters'17: 2 июн
+:ural.forestnet.org 322 fadsg #ukraine_new_order 1 :[+inr ]  Всё, что вы хотели знать о Германии, РФ, США и Украине: 0. https://youtu.be/1A0VC9A0eIg 1. https://youtu.be/IGZSiwOl47A || Всё, что вам нужно знать о США и Ближнем Востоке 0. https://youtu.be/UcmTa7LT7_M 1. https://youtu.be/9zkMf9PGSgQ ||
+:ural.forestnet.org 322 fadsg #CEPAHH 1 :[+tnr ]  
+:ural.forestnet.org 322 fadsg #mf 1 :[+ ]  
+:ural.forestnet.org 322 fadsg #Romashka 1 :[+tnr ]  www.yakovsamodurov.ru и www.geroifanclub.ru контакты вебмастера http://vk.com/id9611196
+:ural.forestnet.org 322 fadsg #dihalt 2 :[+ ]  
+:ural.forestnet.org 322 fadsg #russf_new 1 :[+inr ]  #russf2. Канал фантастики. Официальный язык общения - литературный рус
+2023-06-12 19:43:12.374565:
+ский. Обсценная лексика, албанский язык, язык-404, и ругань .ru/.ua/.il/.by запрещены || Общение без границ - на канале #ukraine || мы в телеграме https://t.me/joinchat/C06Xsg9furU7GEcsr5JZPw ||
+:ural.forestnet.org 322 fadsg #sysadminz.su 1 :[+ ]  
+:ural.forestnet.org 322 fadsg #drahelas 1 :[+r ]  [Радио http://radio.drahelas.ru || Мат запрещен! || команда !правила || башик http://bash.drahelas.ru]
+:ural.forestnet.org 322 fadsg #elite-games 1 :[+ ]  
+:ural.forestnet.org 322 fadsg #ukraine2 1 :[+inr ]  Всё, что вы хотели знать о Германии, РФ, США и Украине: 0. https://youtu.be/1A0VC9A0eIg 1. https://youtu.be/IGZSiwOl47A || Всё, что вам нужно знать о США и Ближнем Востоке 0. https://youtu.be/UcmTa7LT7_M 1. https://youtu.be/9zkMf9PGSgQ ||
+:ural.forestnet.org 322 fadsg #forest 3 :[+tnr ]  
+:ural.forestnet.org 322 fadsg #proyecto 1 :[+ ]  
+:ural.forestnet.org 322 fadsg #pvt813 5 :[+tnr ]  Вот и лето, а каникул - нету.
+:ural.forestnet.org 322 fadsg #esp8266 3 :[+tn ]  Канал проекта http://wifi-iot.com/ . Те
+2023-06-12 19:43:12.410827:
+кущая версия прошивки конструктора -0.1.1. Демо веб интерфейс http://demo.wifi-iot.com
+:ural.forestnet.org 322 fadsg #netlog 1 :[+rO ]  
+:ural.forestnet.org 322 fadsg #z80 4 :[+tnr ]  Telegram: https://t.me/z80_q11 | ZX Spectrum sweet home! | ZiFi is coming! | Sublime Text 2 for z80 - http://bit.ly/st4z80 | Логи http://irclogs.retroscene.org/ | Уютный в контексте чата - это форум http://tslabs.info | Люди, События, Демосцены: http://hype.retroscene.org
+:ural.forestnet.org 322 fadsg #aqq 1 :[+tn ]  
+:ural.forestnet.org 322 fadsg #rus_news 2 :[+tnr ]  тут новости на русском языке круглосуточно!
+:ural.forestnet.org 322 fadsg #mhm 5 :[+tr ]  железо ZX: https://t.me/speccy_hard, ATM и ZX Evo: https://t.me/atm_zxevo_baseconf, NedoOS: https://discord.gg/6hMbfavtQb
+:ural.forestnet.org 322 fadsg #qsp 1 :[+ ]  
+:ural.forestnet.org 322 fadsg * 1 :[+ptnr ]  
+:ural.forestnet.org 322 fadsg #russf2 6 :[+r ]  #russf2. Канал фантастики. Официальный язык общения - литературный русский. Обсценная лексика, албанский язык
+2023-06-12 19:43:12.460950:
+, язык-404, и ругань .ru/.ua/.il/.by запрещены || Общение без границ - на канале #ukraine || мы в телеграме https://t.me/joinchat/C06Xsg9furU7GEcsr5JZPw ||
+:ural.forestnet.org 322 fadsg #ruscom 1 :[+tnr ]  Когда в аду не останется места, сисадмины перестанут умирать…
+:ural.forestnet.org 322 fadsg #russf_new_order 1 :[+inr ]  #russf2. Канал фантастики. Официальный язык общения - литературный русский. Обсценная лексика, албанский язык, язык-404, и ругань .ru/.ua/.il/.by запрещены || Общение без границ - на канале #ukraine || мы в телеграме https://t.me/joinchat/C06Xsg9furU7GEcsr5JZPw ||
+:ural.forestnet.org 322 fadsg #mielofon 1 :[+ ]  Понимаешь, я буду жить... Вернее я живу, через сто лет. Я из будущего.
+:ural.forestnet.org 322 fadsg #console 2 :[+ ]  
+:ural.forestnet.org 322 fadsg #ukraine2017 1 :[+inr ]  Всё, что вы хотели знать о Германии, РФ, США и Украине: 0. https://youtu.be/1A0VC9A0eIg 1. https://youtu.be/IGZSiwOl47A || Всё, что вам нужно знать о США и Ближнем Востоке 0. https://youtu.be/UcmTa7LT7_M
+2023-06-12 19:43:12.511958:
+ 1. https://youtu.be/9zkMf9PGSgQ ||
+:ural.forestnet.org 322 fadsg #uoclone-drowy 1 :[+tn ]  
+:ural.forestnet.org 322 fadsg #krapivin 3 :[+tnr ]  Сегодня Владиславу Петровичу Крапивину исполнилось бы 82 года.... Хоот векки, Владислав Петрович! Вечного вам лета на Дороге!
+:ural.forestnet.org 322 fadsg #russf_with_blackjack_and_whores 1 :[+inr ]  #russf2. Канал фантастики. Официальный язык общения - литературный русский. Обсценная лексика, албанский язык, язык-404, и ругань .ru/.ua/.il/.by запрещены || Общение без границ - на канале #ukraine || мы в телеграме https://t.me/joinchat/C06Xsg9furU7GEcsr5JZPw ||
+:ural.forestnet.org 322 fadsg #russf2017 1 :[+inr ]  #russf2. Канал фантастики. Официальный язык общения - литературный русский. Обсценная лексика, албанский язык, язык-404, и ругань .ru/.ua/.il/.by запрещены || Общение без границ - на канале #ukraine || мы в телеграме https://t.me/joinchat/C06Xsg9furU7GEcsr5JZPw ||
+:ural.forestnet.org 322 fadsg #artfield_2017 1 :[+tnr ]  сайт http://artfield.me трансляци
+2023-06-12 19:43:12.563971:
+я http://goo.gl/B9GwF1
+:ural.forestnet.org 322 fadsg #seismic 1 :[+ ]  
+:ural.forestnet.org 323 fadsg :End of /LIST
+
+2023-06-12 20:34:18.753626:
+:ural.forestnet.org NOTICE AUTH :*** Looking up your hostname...
+:ural.forestnet.org NOTICE AUTH :*** Found your hostname
+:ural.forestnet.org NOTICE fdss :*** Notice -- Your hostname has been masked with non-ssl scheme
+:ural.forestnet.org NOTICE fdss :*** Notice -- You have connected on 7000 port with cp1251 mapping
+:ural.forestnet.org 001 fdss :Welcome to the ForestNet IRC Network fdss!~sfdg@194.226.244.10
+:ural.forestnet.org 002 fdss :Your host is ural.forestnet.org, running version Pride-2.2(21)
+:ural.forestnet.org 003 fdss :This server was created 02/19/15 04:48 04:48:00 AM  -0500 EST 1424339280
+:ural.forestnet.org 004 fdss ural.forestnet.org Pride-2.2(21) aAbcdefFghiIjkKmnoOrRSstwxy ABbcefHiIjklLmMnoOpPQrRsStUvZ
+:ural.forestnet.org 005 fdss NETWORK=ForestNet SAFELIST MAXBANS=500 MAXCHANNELS=40 CHANNELLEN=32 KICKLEN=800 NICKLEN=60 TOPICLEN=800 MODES=6 CHANTYPES=# CHANLIMIT=#:40 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ :are available on this server
+:ural.forestnet.org 005 fdss CASEMAPPING=ascii WATCH=1
+2023-06-12 20:34:18.800717:
+28 SILENCE=10 ELIST=cmntu EXCEPTS INVEX CHANMODES=beI,k,jl,ciABfHmMnNOpPQRrSstUWZ MAXLIST=b:500,e:225,I:225 TARGMAX=DCCALLOW:,JOIN:,KICK:4,KILL:20,NOTICE:20,PART:,PRIVMSG:20,WHOIS:,WHOWAS: :are available on this server
+:ural.forestnet.org 005 fdss CHARSET=utf-8,* EQUALNICK :are available on this server
+:ural.forestnet.org 251 fdss :There are 10 users and 52 invisible on 4 servers
+:ural.forestnet.org 252 fdss 1 :irc operators online
+:ural.forestnet.org 253 fdss 2864 :unknown connection(s)
+:ural.forestnet.org 254 fdss 92 :channels formed
+:ural.forestnet.org 255 fdss :I have 19 clients and 1 servers
+:ural.forestnet.org 265 fdss :Current local users: 19 Max: 448
+:ural.forestnet.org 266 fdss :Current global users: 62 Max: 593
+:ural.forestnet.org NOTICE fdss :*** Notice -- motd was last changed at 5/10/2015 7:39
+:ural.forestnet.org 375 fdss :- ural.forestnet.org Message of the Day - 
+:ural.forestnet.org 372 fdss :- 12/6/2023 15:34
+:ural.forestnet.org 372 fdss :-  ==============================:[5Welco
+2023-06-12 20:34:18.848220:
+me to Wonderland of irc.forestnet.org]:=
+:ural.forestnet.org 372 fdss :-  9.::::::::                                   .::   .:::     .::            .::  
+:ural.forestnet.org 372 fdss :-  9.::                                         .::   .: .::   .::            .::  
+:ural.forestnet.org 372 fdss :-  9.::       .:::.  .: .:::.  .:::.    .:::. .:.:::. .:: .::  .::   .:::.  .:.:::.
+:ural.forestnet.org 372 fdss :-  9.:::::: .:     :. .::    .:     :. .::      .::   .::  .:: .:: .:     :.  .::  
+:ural.forestnet.org 372 fdss :-  9.::     ::     :: .::    :::::::::  ':::.   .::   .::   .: .:: :::::::::  .::  
+:ural.forestnet.org 372 fdss :-  9.::     ':     :' .::    ':             ::  .::   .::    .: :: ':         .::  
+:ural.forestnet.org 372 fdss :-  9.::       ':::'  .:::      '::::'   ':::'    '::' .::      .::   '::::'    '::'
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-  -:[5Codepages on ports]:----------------------------------------------------
+2023-06-12 20:34:18.895862:
+--
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-     14 6668: koi8r
+:ural.forestnet.org 372 fdss :-     3 6662: unicode              7 6669: cp1251             
+:ural.forestnet.org 372 fdss :-     3 6667: unicode              7 7000: cp1251             14 6670: us_ascii
+:ural.forestnet.org 372 fdss :-    3 +6697: SSL unicode         7 +7325: SSL cp1251        14 +7326: SSL us_ascii
+:ural.forestnet.org 372 fdss :-     
+:ural.forestnet.org 372 fdss :-   Type /charset for list of all supported charsets on Network.
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-  =============================================================:[5Server info]:=
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-   Please note that on connection  to this server, your machine may be scanned
+:ural.forestnet.org 372 fdss :-   for misconfigured (open) proxies. Open proxies are not permitted in our IRC
+:ural.forestnet.org 372 fdss :-   Network.
+:ural.for
+2023-06-12 20:34:18.917852:
+estnet.org 372 fdss :-   If you object to this policy please leave immediatly.
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-   9GOLDEN RULE:
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-     - No spamming, flooding or linklooking.
+:ural.forestnet.org 372 fdss :-     - No clones or virtual clones allowed.
+:ural.forestnet.org 372 fdss :-     - No abusive bots/scripts/bncs or open proxies.
+:ural.forestnet.org 372 fdss :-     - No XDCC bots, this is not a warez network.
+:ural.forestnet.org 372 fdss :-     - No racism or bigotry, offenders will be banned.
+:ural.forestnet.org 372 fdss :-     - Channel ban evasion will not be tolerated.
+:ural.forestnet.org 372 fdss :-  -----------------------------------------------------------------------------
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-  5Please visit ForestNet:
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-    Official site:                                 13http:
+2023-06-12 20:34:18.967036:
+//www.forestnet.org/
+:ural.forestnet.org 372 fdss :-    IRC web-gate:                                  13http://chat.forestnet.org/
+:ural.forestnet.org 372 fdss :-    Network Forum:                                 13http://forum.forestnet.org/
+:ural.forestnet.org 372 fdss :-    Network Statistics:                            13http://stats.forestnet.org/
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-  Forum administrative contact:                    11<forum@forestnet.org>
+:ural.forestnet.org 372 fdss :-  Abuse reports:                                   11<abuse@forestnet.org>
+:ural.forestnet.org 372 fdss :-  Got KLINEd/AKILLed?                              11<kline@forestnet.org>
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-  =:[5Channels info]:===========================================================
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-  Contacting Network Staff:
+:ural.forestnet.org 372 fdss :- 
+:u
+2023-06-12 20:34:18.994041:
+ral.forestnet.org 372 fdss :-   14#forest
+:ural.forestnet.org 372 fdss :-       - is the official link and administrative staff channel at ForestNet,
+:ural.forestnet.org 372 fdss :-         abusive reports, link offers etc should be discussed in the channel.
+:ural.forestnet.org 372 fdss :-   14#help
+:ural.forestnet.org 372 fdss :-       - is the official  help channel at ForestNet, all network services
+:ural.forestnet.org 372 fdss :-         usage questions should be asked there.
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-  There is a plenty of channels at ForestNet:
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-   14#BuKTopuHa
+:ural.forestnet.org 372 fdss :-   14#rusisrael_trivia
+:ural.forestnet.org 372 fdss :-       - is popular irc on-line games.
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-   14#ukraine
+:ural.forestnet.org 372 fdss :-   14#love
+:ural.forestnet.org 372 fdss :-       - gene
+2023-06-12 20:34:19.075058:
+ral chat channels.
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-   14#php
+:ural.forestnet.org 372 fdss :-       - programming help channel.
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-   14#nix
+:ural.forestnet.org 372 fdss :-       - is linux/freebsd/unix/solaris/macosx and etc channel.
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-   14#music
+:ural.forestnet.org 372 fdss :-       - Music related talks, official radio channel
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-   14#sysadminz.ru
+:ural.forestnet.org 372 fdss :-       - System administration, networking, Cisco vs. Huawei holywars,
+:ural.forestnet.org 372 fdss :-         and other related discussion.
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-   14#russf
+:ural.forestnet.org 372 fdss :-       - Russian sci-fi related channel
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-  And man
+2023-06-12 20:34:19.134175:
+y-many more! Type /list ;-)
+:ural.forestnet.org 372 fdss :- 
+:ural.forestnet.org 372 fdss :-  ---------------------------------------------------------------------:[5End]:-
+:ural.forestnet.org 376 fdss :End of /MOTD command.
+:ural.forestnet.org NOTICE fdss :*** Notice -- This server runs an open proxy monitor to prevent abuse.
+:ural.forestnet.org NOTICE fdss :*** Notice -- If you see connections on various ports from ural.forestnet.org
+:ural.forestnet.org NOTICE fdss :*** Notice -- please disregard them, as they are the monitor in action.
+:ural.forestnet.org NOTICE fdss :*** Notice -- For more information please visit http://kline.forestnet.org/proxy/
+:fdss MODE fdss :+i
+:fdss!~sfdg@194.226.244.1543 JOIN :#elite-games
+:ural.forestnet.org 353 fdss = #elite-games :fdss @spear 
+:ural.forestnet.org 366 fdss #elite-games :End of /NAMES list.
+:Forest!equal@forestnet NOTICE fdss :[Logon News - Aug 17 2011] Now you're required to provide *REAL* email when registering new nicknames (mandatory con
+2023-06-12 20:34:19.197082:
+firmation procedure). Max 3 nicks per email. Nickname/Channel expiration time was changed to 180 days.
+:Forest!equal@forestnet NOTICE fdss :[Logon News - Nov 22 2013] For a ForestNet statistics site refer to http://stats.forestnet.org/ (Only modern, HTML5/CSS3 enabled browsers supported. No IE. kthnxbai;)
+:Forest!equal@forestnet NOTICE fdss :[Logon News - Sep 21 2015] We are switchin' step by step to unicode on port 6667, new basic port for cp1251 = 7000
+
+2023-06-12 20:34:53.613336:
+:ural.forestnet.org NOTICE AUTH :*** Looking up your hostname...
+
+2023-06-12 20:34:53.659386:
+:ural.forestnet.org NOTICE AUTH :*** Found your hostname
+:ural.forestnet.org NOTICE sd :*** Notice -- Your hostname has been masked with non-ssl scheme
+:ural.forestnet.org NOTICE sd :*** Notice -- You have connected on 7000 port with cp1251 mapping
+:ural.forestnet.org 001 sd :Welcome to the ForestNet IRC Network sd!~afsgfdh@194.226.244.10
+:ural.forestnet.org 002 sd :Your host is ural.forestnet.org, running version Pride-2.2(21)
+:ural.forestnet.org 003 sd :This server was created 02/19/15 04:48 04:48:00 AM  -0500 EST 1424339280
+:ural.forestnet.org 004 sd ural.forestnet.org Pride-2.2(21) aAbcdefFghiIjkKmnoOrRSstwxy ABbcefHiIjklLmMnoOpPQrRsStUvZ
+:ural.forestnet.org 005 sd NETWORK=ForestNet SAFELIST MAXBANS=500 MAXCHANNELS=40 CHANNELLEN=32 KICKLEN=800 NICKLEN=60 TOPICLEN=800 MODES=6 CHANTYPES=# CHANLIMIT=#:40 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ :are available on this server
+:ural.forestnet.org 005 sd CASEMAPPING=ascii WATCH=128 SILENCE=10 ELIST=cmntu EXCEPTS INVEX CHANMODES=beI,k,jl,ciABfHmMnNOpPQRrSstUWZ
+2023-06-12 20:34:53.705632:
+ MAXLIST=b:500,e:225,I:225 TARGMAX=DCCALLOW:,JOIN:,KICK:4,KILL:20,NOTICE:20,PART:,PRIVMSG:20,WHOIS:,WHOWAS: :are available on this server
+:ural.forestnet.org 005 sd CHARSET=utf-8,* EQUALNICK :are available on this server
+:ural.forestnet.org 251 sd :There are 10 users and 52 invisible on 4 servers
+:ural.forestnet.org 252 sd 1 :irc operators online
+:ural.forestnet.org 254 sd 92 :channels formed
+:ural.forestnet.org 255 sd :I have 19 clients and 1 servers
+:ural.forestnet.org 265 sd :Current local users: 19 Max: 448
+:ural.forestnet.org 266 sd :Current global users: 62 Max: 593
+:ural.forestnet.org NOTICE sd :*** Notice -- motd was last changed at 5/10/2015 7:39
+:ural.forestnet.org 375 sd :- ural.forestnet.org Message of the Day - 
+:ural.forestnet.org 372 sd :- 12/6/2023 15:34
+:ural.forestnet.org 372 sd :-  ==============================:[5Welcome to Wonderland of irc.forestnet.org]:=
+:ural.forestnet.org 372 sd :-  9.::::::::                                   .::   .:::     .::            .::  
+
+2023-06-12 20:34:53.752973:
+:ural.forestnet.org 372 sd :-  9.::                                         .::   .: .::   .::            .::  
+:ural.forestnet.org 372 sd :-  9.::       .:::.  .: .:::.  .:::.    .:::. .:.:::. .:: .::  .::   .:::.  .:.:::.
+:ural.forestnet.org 372 sd :-  9.:::::: .:     :. .::    .:     :. .::      .::   .::  .:: .:: .:     :.  .::  
+:ural.forestnet.org 372 sd :-  9.::     ::     :: .::    :::::::::  ':::.   .::   .::   .: .:: :::::::::  .::  
+:ural.forestnet.org 372 sd :-  9.::     ':     :' .::    ':             ::  .::   .::    .: :: ':         .::  
+:ural.forestnet.org 372 sd :-  9.::       ':::'  .:::      '::::'   ':::'    '::' .::      .::   '::::'    '::'
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-  -:[5Codepages on ports]:------------------------------------------------------
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-     14 6668: koi8r
+:ural.forestnet.org 372 sd :-     3 6662: unicode              7 6669: cp1251          
+2023-06-12 20:34:53.783102:
+   
+:ural.forestnet.org 372 sd :-     3 6667: unicode              7 7000: cp1251             14 6670: us_ascii
+:ural.forestnet.org 372 sd :-    3 +6697: SSL unicode         7 +7325: SSL cp1251        14 +7326: SSL us_ascii
+:ural.forestnet.org 372 sd :-     
+:ural.forestnet.org 372 sd :-   Type /charset for list of all supported charsets on Network.
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-  =============================================================:[5Server info]:=
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-   Please note that on connection  to this server, your machine may be scanned
+:ural.forestnet.org 372 sd :-   for misconfigured (open) proxies. Open proxies are not permitted in our IRC
+:ural.forestnet.org 372 sd :-   Network.
+:ural.forestnet.org 372 sd :-   If you object to this policy please leave immediatly.
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-   9GOLDEN RULE:
+:ural.forestnet.org 372 sd :- 
+:ural.forest
+2023-06-12 20:34:53.847760:
+net.org 372 sd :-     - No spamming, flooding or linklooking.
+:ural.forestnet.org 372 sd :-     - No clones or virtual clones allowed.
+:ural.forestnet.org 372 sd :-     - No abusive bots/scripts/bncs or open proxies.
+:ural.forestnet.org 372 sd :-     - No XDCC bots, this is not a warez network.
+:ural.forestnet.org 372 sd :-     - No racism or bigotry, offenders will be banned.
+:ural.forestnet.org 372 sd :-     - Channel ban evasion will not be tolerated.
+:ural.forestnet.org 372 sd :-  -----------------------------------------------------------------------------
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-  5Please visit ForestNet:
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-    Official site:                                 13http://www.forestnet.org/
+:ural.forestnet.org 372 sd :-    IRC web-gate:                                  13http://chat.forestnet.org/
+:ural.forestnet.org 372 sd :-    Network Forum:                                 13http://forum.
+2023-06-12 20:34:53.903771:
+forestnet.org/
+:ural.forestnet.org 372 sd :-    Network Statistics:                            13http://stats.forestnet.org/
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-  Forum administrative contact:                    11<forum@forestnet.org>
+:ural.forestnet.org 372 sd :-  Abuse reports:                                   11<abuse@forestnet.org>
+:ural.forestnet.org 372 sd :-  Got KLINEd/AKILLed?                              11<kline@forestnet.org>
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-  =:[5Channels info]:===========================================================
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-  Contacting Network Staff:
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-   14#forest
+:ural.forestnet.org 372 sd :-       - is the official link and administrative staff channel at ForestNet,
+:ural.forestnet.org 372 sd :-         abusive reports, link offers etc should be discussed in the channel.
+:
+2023-06-12 20:34:53.959178:
+ural.forestnet.org 372 sd :-   14#help
+:ural.forestnet.org 372 sd :-       - is the official  help channel at ForestNet, all network services
+:ural.forestnet.org 372 sd :-         usage questions should be asked there.
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-  There is a plenty of channels at ForestNet:
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-   14#BuKTopuHa
+:ural.forestnet.org 372 sd :-   14#rusisrael_trivia
+:ural.forestnet.org 372 sd :-       - is popular irc on-line games.
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-   14#ukraine
+:ural.forestnet.org 372 sd :-   14#love
+:ural.forestnet.org 372 sd :-       - general chat channels.
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-   14#php
+:ural.forestnet.org 372 sd :-       - programming help channel.
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-   14#nix
+:ural.forestnet.org 372 sd :-       - is linux/freebsd/unix/
+2023-06-12 20:34:54.007340:
+solaris/macosx and etc channel.
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-   14#music
+:ural.forestnet.org 372 sd :-       - Music related talks, official radio channel
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-   14#sysadminz.ru
+:ural.forestnet.org 372 sd :-       - System administration, networking, Cisco vs. Huawei holywars,
+:ural.forestnet.org 372 sd :-         and other related discussion.
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-   14#russf
+:ural.forestnet.org 372 sd :-       - Russian sci-fi related channel
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-  And many-many more! Type /list ;-)
+:ural.forestnet.org 372 sd :- 
+:ural.forestnet.org 372 sd :-  ---------------------------------------------------------------------:[5End]:-
+:ural.forestnet.org 376 sd :End of /MOTD command.
+:ural.forestnet.org NOTICE sd :*** Notice -- This server runs an open proxy monitor to prevent abuse.
+2023-06-12 20:34:54.029748:
+
+:ural.forestnet.org NOTICE sd :*** Notice -- If you see connections on various ports from ural.forestnet.org
+:ural.forestnet.org NOTICE sd :*** Notice -- please disregard them, as they are the monitor in action.
+:ural.forestnet.org NOTICE sd :*** Notice -- For more information please visit http://kline.forestnet.org/proxy/
+:sd MODE sd :+i
+:sd!~afsgfdh@194.226.244.1543 JOIN :#prog-rock
+:ural.forestnet.org 332 sd #prog-rock :Ватерса с 76-летием! || Гилмора с ДР! 73! || Хэммила с юбилеем! || grows up our Plant... 70! || Яну Андерсону 71! || Ринго очень старр! 78! || Гоп! Хэй-гоп! Маккартни -- 76! || Э.Латимеру -- 69! || Р.Фриппу -- 73! || Ричи нашему Блэкмору -- 73! || Роберту Энтони Планту 69! || !70 лет нашему Джетро Андерсону! || Waters'17: 2 июн
+:ural.forestnet.org 333 sd #prog-rock Злой Олежек 1567761535
+:ural.forestnet.org 353 sd = #prog-rock :sd ryog_ Yuh-Joh @AlexZenon 
+:ural.forestnet.org 366 sd #prog-rock :End of /NAMES list.
+:Forest!equal@forestnet NOTICE sd :[Logon News - Aug 17 2011] Now
+2023-06-12 20:34:54.079985:
+ you're required to provide *REAL* email when registering new nicknames (mandatory confirmation procedure). Max 3 nicks per email. Nickname/Channel expiration time was changed to 180 days.
+:Forest!equal@forestnet NOTICE sd :[Logon News - Nov 22 2013] For a ForestNet statistics site refer to http://stats.forestnet.org/ (Only modern, HTML5/CSS3 enabled browsers supported. No IE. kthnxbai;)
+:Forest!equal@forestnet NOTICE sd :[Logon News - Sep 21 2015] We are switchin' step by step to unicode on port 6667, new basic port for cp1251 = 7000
+
+2023-06-15 17:56:45.936514:
+:ural.forestnet.org NOTICE AUTH :*** Looking up your hostname...
+
+2023-06-15 17:56:45.986526:
+:ural.forestnet.org NOTICE AUTH :*** Found your hostname
+:ural.forestnet.org NOTICE sfdgfh :*** Notice -- Your hostname has been masked with non-ssl scheme
+:ural.forestnet.org NOTICE sfdgfh :*** Notice -- You have connected on 7000 port with cp1251 mapping
+:ural.forestnet.org 001 sfdgfh :Welcome to the ForestNet IRC Network sfdgfh!~saaDADSFH@194.226.240.118
+:ural.forestnet.org 002 sfdgfh :Your host is ural.forestnet.org, running version Pride-2.2(21)
+:ural.forestnet.org 003 sfdgfh :This server was created 02/19/15 04:48 04:48:00 AM  -0500 EST 1424339280
+:ural.forestnet.org 004 sfdgfh ural.forestnet.org Pride-2.2(21) aAbcdefFghiIjkKmnoOrRSstwxy ABbcefHiIjklLmMnoOpPQrRsStUvZ
+:ural.forestnet.org 005 sfdgfh NETWORK=ForestNet SAFELIST MAXBANS=500 MAXCHANNELS=40 CHANNELLEN=32 KICKLEN=800 NICKLEN=60 TOPICLEN=800 MODES=6 CHANTYPES=# CHANLIMIT=#:40 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ :are available on this server
+:ural.forestnet.org 005 sfdgfh CASEMAPPING=ascii WATCH=128 SILENCE=10 ELIST=cmntu EXCEPTS INVEX CH
+2023-06-15 17:56:46.035489:
+ANMODES=beI,k,jl,ciABfHmMnNOpPQRrSstUWZ MAXLIST=b:500,e:225,I:225 TARGMAX=DCCALLOW:,JOIN:,KICK:4,KILL:20,NOTICE:20,PART:,PRIVMSG:20,WHOIS:,WHOWAS: :are available on this server
+:ural.forestnet.org 005 sfdgfh CHARSET=utf-8,* EQUALNICK :are available on this server
+:ural.forestnet.org 251 sfdgfh :There are 10 users and 47 invisible on 4 servers
+:ural.forestnet.org 252 sfdgfh 2 :irc operators online
+:ural.forestnet.org 253 sfdgfh 2893 :unknown connection(s)
+:ural.forestnet.org 254 sfdgfh 88 :channels formed
+:ural.forestnet.org 255 sfdgfh :I have 17 clients and 1 servers
+:ural.forestnet.org 265 sfdgfh :Current local users: 17 Max: 448
+:ural.forestnet.org 266 sfdgfh :Current global users: 57 Max: 593
+:ural.forestnet.org NOTICE sfdgfh :*** Notice -- motd was last changed at 5/10/2015 7:39
+:ural.forestnet.org 375 sfdgfh :- ural.forestnet.org Message of the Day - 
+:ural.forestnet.org 372 sfdgfh :- 15/6/2023 12:56
+:ural.forestnet.org 372 sfdgfh :-  ==============================:[5Welcome to Wonderland o
+2023-06-15 17:56:46.057175:
+f irc.forestnet.org]:=
+:ural.forestnet.org 372 sfdgfh :-  9.::::::::                                   .::   .:::     .::            .::  
+:ural.forestnet.org 372 sfdgfh :-  9.::                                         .::   .: .::   .::            .::  
+:ural.forestnet.org 372 sfdgfh :-  9.::       .:::.  .: .:::.  .:::.    .:::. .:.:::. .:: .::  .::   .:::.  .:.:::.
+:ural.forestnet.org 372 sfdgfh :-  9.:::::: .:     :. .::    .:     :. .::      .::   .::  .:: .:: .:     :.  .::  
+:ural.forestnet.org 372 sfdgfh :-  9.::     ::     :: .::    :::::::::  ':::.   .::   .::   .: .:: :::::::::  .::  
+:ural.forestnet.org 372 sfdgfh :-  9.::     ':     :' .::    ':             ::  .::   .::    .: :: ':         .::  
+:ural.forestnet.org 372 sfdgfh :-  9.::       ':::'  .:::      '::::'   ':::'    '::' .::      .::   '::::'    '::'
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-  -:[5Codepages on ports]:----------------------------------------------------
+2023-06-15 17:56:46.081179:
+--
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-     14 6668: koi8r
+:ural.forestnet.org 372 sfdgfh :-     3 6662: unicode              7 6669: cp1251             
+:ural.forestnet.org 372 sfdgfh :-     3 6667: unicode              7 7000: cp1251             14 6670: us_ascii
+:ural.forestnet.org 372 sfdgfh :-    3 +6697: SSL unicode         7 +7325: SSL cp1251        14 +7326: SSL us_ascii
+:ural.forestnet.org 372 sfdgfh :-     
+:ural.forestnet.org 372 sfdgfh :-   Type /charset for list of all supported charsets on Network.
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-  =============================================================:[5Server info]:=
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-   Please note that on connection  to this server, your machine may be scanned
+:ural.forestnet.org 372 sfdgfh :-   for misconfigured (open) proxies. Open proxies are not permitted in our IRC
+:ural.forestnet.org 372 sfdgf
+2023-06-15 17:56:46.132033:
+h :-   Network.
+:ural.forestnet.org 372 sfdgfh :-   If you object to this policy please leave immediatly.
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-   9GOLDEN RULE:
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-     - No spamming, flooding or linklooking.
+:ural.forestnet.org 372 sfdgfh :-     - No clones or virtual clones allowed.
+:ural.forestnet.org 372 sfdgfh :-     - No abusive bots/scripts/bncs or open proxies.
+:ural.forestnet.org 372 sfdgfh :-     - No XDCC bots, this is not a warez network.
+:ural.forestnet.org 372 sfdgfh :-     - No racism or bigotry, offenders will be banned.
+:ural.forestnet.org 372 sfdgfh :-     - Channel ban evasion will not be tolerated.
+:ural.forestnet.org 372 sfdgfh :-  -----------------------------------------------------------------------------
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-  5Please visit ForestNet:
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-    
+2023-06-15 17:56:46.157025:
+Official site:                                 13http://www.forestnet.org/
+:ural.forestnet.org 372 sfdgfh :-    IRC web-gate:                                  13http://chat.forestnet.org/
+:ural.forestnet.org 372 sfdgfh :-    Network Forum:                                 13http://forum.forestnet.org/
+:ural.forestnet.org 372 sfdgfh :-    Network Statistics:                            13http://stats.forestnet.org/
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-  Forum administrative contact:                    11<forum@forestnet.org>
+:ural.forestnet.org 372 sfdgfh :-  Abuse reports:                                   11<abuse@forestnet.org>
+:ural.forestnet.org 372 sfdgfh :-  Got KLINEd/AKILLed?                              11<kline@forestnet.org>
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-  =:[5Channels info]:===========================================================
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 37
+2023-06-15 17:56:46.214040:
+2 sfdgfh :-  Contacting Network Staff:
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-   14#forest
+:ural.forestnet.org 372 sfdgfh :-       - is the official link and administrative staff channel at ForestNet,
+:ural.forestnet.org 372 sfdgfh :-         abusive reports, link offers etc should be discussed in the channel.
+:ural.forestnet.org 372 sfdgfh :-   14#help
+:ural.forestnet.org 372 sfdgfh :-       - is the official  help channel at ForestNet, all network services
+:ural.forestnet.org 372 sfdgfh :-         usage questions should be asked there.
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-  There is a plenty of channels at ForestNet:
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-   14#BuKTopuHa
+:ural.forestnet.org 372 sfdgfh :-   14#rusisrael_trivia
+:ural.forestnet.org 372 sfdgfh :-       - is popular irc on-line games.
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgf
+2023-06-15 17:56:46.243052:
+h :-   14#ukraine
+:ural.forestnet.org 372 sfdgfh :-   14#love
+:ural.forestnet.org 372 sfdgfh :-       - general chat channels.
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-   14#php
+:ural.forestnet.org 372 sfdgfh :-       - programming help channel.
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-   14#nix
+:ural.forestnet.org 372 sfdgfh :-       - is linux/freebsd/unix/solaris/macosx and etc channel.
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-   14#music
+:ural.forestnet.org 372 sfdgfh :-       - Music related talks, official radio channel
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-   14#sysadminz.ru
+:ural.forestnet.org 372 sfdgfh :-       - System administration, networking, Cisco vs. Huawei holywars,
+:ural.forestnet.org 372 sfdgfh :-         and other related discussion.
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-   14#russf
+:ural.forestnet.org 372 sfdgfh :-   
+2023-06-15 17:56:46.301036:
+    - Russian sci-fi related channel
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-  And many-many more! Type /list ;-)
+:ural.forestnet.org 372 sfdgfh :- 
+:ural.forestnet.org 372 sfdgfh :-  ---------------------------------------------------------------------:[5End]:-
+:ural.forestnet.org 376 sfdgfh :End of /MOTD command.
+:ural.forestnet.org NOTICE sfdgfh :*** Notice -- This server runs an open proxy monitor to prevent abuse.
+:ural.forestnet.org NOTICE sfdgfh :*** Notice -- If you see connections on various ports from ural.forestnet.org
+:ural.forestnet.org NOTICE sfdgfh :*** Notice -- please disregard them, as they are the monitor in action.
+:ural.forestnet.org NOTICE sfdgfh :*** Notice -- For more information please visit http://kline.forestnet.org/proxy/
+:sfdgfh MODE sfdgfh :+i
+:sfdgfh!~saaDADSFH@194.226.240.1606 JOIN :#elite-games
+:ural.forestnet.org 353 sfdgfh = #elite-games :sfdgfh @spear 
+:ural.forestnet.org 366 sfdgfh #elite-ga
+2023-06-15 17:56:46.325049:
+mes :End of /NAMES list.
+:Forest!equal@forestnet NOTICE sfdgfh :[Logon News - Aug 17 2011] Now you're required to provide *REAL* email when registering new nicknames (mandatory confirmation procedure). Max 3 nicks per email. Nickname/Channel expiration time was changed to 180 days.
+:Forest!equal@forestnet NOTICE sfdgfh :[Logon News - Nov 22 2013] For a ForestNet statistics site refer to http://stats.forestnet.org/ (Only modern, HTML5/CSS3 enabled browsers supported. No IE. kthnxbai;)
+:Forest!equal@forestnet NOTICE sfdgfh :[Logon News - Sep 21 2015] We are switchin' step by step to unicode on port 6667, new basic port for cp1251 = 7000
+
+2023-06-15 17:57:06.446080:
+:ural.forestnet.org 353 sfdgfh = #elite-games :sfdgfh @spear 
+:ural.forestnet.org 366 sfdgfh #elite-games :End of /NAMES list.
+
+2023-06-15 18:05:14.243487:
+:ural.forestnet.org NOTICE AUTH :*** Looking up your hostname...
+:ural.forestnet.org NOTICE AUTH :*** Found your hostname
+:ural.forestnet.org NOTICE safdsg :*** Notice -- Your hostname has been masked with non-ssl scheme
+:ural.forestnet.org NOTICE safdsg :*** Notice -- You have connected on 7000 port with cp1251 mapping
+:ural.forestnet.org 001 safdsg :Welcome to the ForestNet IRC Network safdsg!~adsgfdh@194.226.240.118
+:ural.forestnet.org 002 safdsg :Your host is ural.forestnet.org, running version Pride-2.2(21)
+:ural.forestnet.org 003 safdsg :This server was created 02/19/15 04:48 04:48:00 AM  -0500 EST 1424339280
+:ural.forestnet.org 004 safdsg ural.forestnet.org Pride-2.2(21) aAbcdefFghiIjkKmnoOrRSstwxy ABbcefHiIjklLmMnoOpPQrRsStUvZ
+:ural.forestnet.org 005 safdsg NETWORK=ForestNet SAFELIST MAXBANS=500 MAXCHANNELS=40 CHANNELLEN=32 KICKLEN=800 NICKLEN=60 TOPICLEN=800 MODES=6 CHANTYPES=# CHANLIMIT=#:40 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ :are available on this server
+:ural.forestnet.org 005 safdsg CAS
+2023-06-15 18:05:14.347238:
+EMAPPING=ascii WATCH=128 SILENCE=10 ELIST=cmntu EXCEPTS INVEX CHANMODES=beI,k,jl,ciABfHmMnNOpPQRrSstUWZ MAXLIST=b:500,e:225,I:225 TARGMAX=DCCALLOW:,JOIN:,KICK:4,KILL:20,NOTICE:20,PART:,PRIVMSG:20,WHOIS:,WHOWAS: :are available on this server
+:ural.forestnet.org 005 safdsg CHARSET=utf-8,* EQUALNICK :are available on this server
+:ural.forestnet.org 251 safdsg :There are 10 users and 47 invisible on 4 servers
+:ural.forestnet.org 252 safdsg 2 :irc operators online
+:ural.forestnet.org 253 safdsg 2893 :unknown connection(s)
+:ural.forestnet.org 254 safdsg 88 :channels formed
+:ural.forestnet.org 255 safdsg :I have 17 clients and 1 servers
+:ural.forestnet.org 265 safdsg :Current local users: 17 Max: 448
+:ural.forestnet.org 266 safdsg :Current global users: 57 Max: 593
+:ural.forestnet.org NOTICE safdsg :*** Notice -- motd was last changed at 5/10/2015 7:39
+:ural.forestnet.org 375 safdsg :- ural.forestnet.org Message of the Day - 
+:ural.forestnet.org 372 safdsg :- 15/6/2023 13:05
+:ural.forestnet.org 372 safds
+2023-06-15 18:05:14.450198:
+g :-  ==============================:[5Welcome to Wonderland of irc.forestnet.org]:=
+:ural.forestnet.org 372 safdsg :-  9.::::::::                                   .::   .:::     .::            .::  
+:ural.forestnet.org 372 safdsg :-  9.::                                         .::   .: .::   .::            .::  
+:ural.forestnet.org 372 safdsg :-  9.::       .:::.  .: .:::.  .:::.    .:::. .:.:::. .:: .::  .::   .:::.  .:.:::.
+:ural.forestnet.org 372 safdsg :-  9.:::::: .:     :. .::    .:     :. .::      .::   .::  .:: .:: .:     :.  .::  
+:ural.forestnet.org 372 safdsg :-  9.::     ::     :: .::    :::::::::  ':::.   .::   .::   .: .:: :::::::::  .::  
+:ural.forestnet.org 372 safdsg :-  9.::     ':     :' .::    ':             ::  .::   .::    .: :: ':         .::  
+:ural.forestnet.org 372 safdsg :-  9.::       ':::'  .:::      '::::'   ':::'    '::' .::      .::   '::::'    '::'
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-  -:[5Codepages 
+2023-06-15 18:05:14.552822:
+on ports]:------------------------------------------------------
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-     14 6668: koi8r
+:ural.forestnet.org 372 safdsg :-     3 6662: unicode              7 6669: cp1251             
+:ural.forestnet.org 372 safdsg :-     3 6667: unicode              7 7000: cp1251             14 6670: us_ascii
+:ural.forestnet.org 372 safdsg :-    3 +6697: SSL unicode         7 +7325: SSL cp1251        14 +7326: SSL us_ascii
+:ural.forestnet.org 372 safdsg :-     
+:ural.forestnet.org 372 safdsg :-   Type /charset for list of all supported charsets on Network.
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-  =============================================================:[5Server info]:=
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-   Please note that on connection  to this server, your machine may be scanned
+:ural.forestnet.org 372 safdsg :-   for misconfigured (open) proxies. Open pro
+2023-06-15 18:05:14.655909:
+xies are not permitted in our IRC
+:ural.forestnet.org 372 safdsg :-   Network.
+:ural.forestnet.org 372 safdsg :-   If you object to this policy please leave immediatly.
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-   9GOLDEN RULE:
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-     - No spamming, flooding or linklooking.
+:ural.forestnet.org 372 safdsg :-     - No clones or virtual clones allowed.
+:ural.forestnet.org 372 safdsg :-     - No abusive bots/scripts/bncs or open proxies.
+:ural.forestnet.org 372 safdsg :-     - No XDCC bots, this is not a warez network.
+:ural.forestnet.org 372 safdsg :-     - No racism or bigotry, offenders will be banned.
+:ural.forestnet.org 372 safdsg :-     - Channel ban evasion will not be tolerated.
+:ural.forestnet.org 372 safdsg :-  -----------------------------------------------------------------------------
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-  5Please visit ForestNet:
+:ural.for
+2023-06-15 18:05:14.758542:
+estnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-    Official site:                                 13http://www.forestnet.org/
+:ural.forestnet.org 372 safdsg :-    IRC web-gate:                                  13http://chat.forestnet.org/
+:ural.forestnet.org 372 safdsg :-    Network Forum:                                 13http://forum.forestnet.org/
+:ural.forestnet.org 372 safdsg :-    Network Statistics:                            13http://stats.forestnet.org/
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-  Forum administrative contact:                    11<forum@forestnet.org>
+:ural.forestnet.org 372 safdsg :-  Abuse reports:                                   11<abuse@forestnet.org>
+:ural.forestnet.org 372 safdsg :-  Got KLINEd/AKILLed?                              11<kline@forestnet.org>
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-  =:[5Channels info]:=======================================================
+2023-06-15 18:05:14.862512:
+====
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-  Contacting Network Staff:
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-   14#forest
+:ural.forestnet.org 372 safdsg :-       - is the official link and administrative staff channel at ForestNet,
+:ural.forestnet.org 372 safdsg :-         abusive reports, link offers etc should be discussed in the channel.
+:ural.forestnet.org 372 safdsg :-   14#help
+:ural.forestnet.org 372 safdsg :-       - is the official  help channel at ForestNet, all network services
+:ural.forestnet.org 372 safdsg :-         usage questions should be asked there.
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-  There is a plenty of channels at ForestNet:
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-   14#BuKTopuHa
+:ural.forestnet.org 372 safdsg :-   14#rusisrael_trivia
+:ural.forestnet.org 372 safdsg :-       - is popular irc on-line games.
+:
+2023-06-15 18:05:14.966596:
+ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-   14#ukraine
+:ural.forestnet.org 372 safdsg :-   14#love
+:ural.forestnet.org 372 safdsg :-       - general chat channels.
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-   14#php
+:ural.forestnet.org 372 safdsg :-       - programming help channel.
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-   14#nix
+:ural.forestnet.org 372 safdsg :-       - is linux/freebsd/unix/solaris/macosx and etc channel.
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-   14#music
+:ural.forestnet.org 372 safdsg :-       - Music related talks, official radio channel
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-   14#sysadminz.ru
+:ural.forestnet.org 372 safdsg :-       - System administration, networking, Cisco vs. Huawei holywars,
+:ural.forestnet.org 372 safdsg :-         and other related discussion.
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 
+2023-06-15 18:05:15.069024:
+372 safdsg :-   14#russf
+:ural.forestnet.org 372 safdsg :-       - Russian sci-fi related channel
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-  And many-many more! Type /list ;-)
+:ural.forestnet.org 372 safdsg :- 
+:ural.forestnet.org 372 safdsg :-  ---------------------------------------------------------------------:[5End]:-
+:ural.forestnet.org 376 safdsg :End of /MOTD command.
+:ural.forestnet.org NOTICE safdsg :*** Notice -- This server runs an open proxy monitor to prevent abuse.
+:ural.forestnet.org NOTICE safdsg :*** Notice -- If you see connections on various ports from ural.forestnet.org
+:ural.forestnet.org NOTICE safdsg :*** Notice -- please disregard them, as they are the monitor in action.
+:ural.forestnet.org NOTICE safdsg :*** Notice -- For more information please visit http://kline.forestnet.org/proxy/
+:safdsg MODE safdsg :+i
+:safdsg!~adsgfdh@194.226.240.1606 JOIN :#elite-games
+:ural.forestnet.org 353 safdsg = #elite-g
+2023-06-15 18:05:15.172373:
+ames :safdsg @spear 
+:ural.forestnet.org 366 safdsg #elite-games :End of /NAMES list.
+:Forest!equal@forestnet NOTICE safdsg :[Logon News - Aug 17 2011] Now you're required to provide *REAL* email when registering new nicknames (mandatory confirmation procedure). Max 3 nicks per email. Nickname/Channel expiration time was changed to 180 days.
+:Forest!equal@forestnet NOTICE safdsg :[Logon News - Nov 22 2013] For a ForestNet statistics site refer to http://stats.forestnet.org/ (Only modern, HTML5/CSS3 enabled browsers supported. No IE. kthnxbai;)
+:Forest!equal@forestnet NOTICE safdsg :[Logon News - Sep 21 2015] We are switchin' step by step to unicode on port 6667, new basic port for cp1251 = 7000

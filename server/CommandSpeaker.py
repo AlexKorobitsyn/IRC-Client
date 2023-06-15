@@ -10,6 +10,9 @@ class CommandSpeaker(AbstractSpeaker):
     def __init__(self, serv_interact, user_interact):
         super().__init__(serv_interact, user_interact)
 
+    def help_action(self, text):
+        print(text)
+
     def names_action(self):
         channel = input("input channel name:\n")
         self.serv_interact.take_names_in_channel(channel)
