@@ -37,6 +37,7 @@ class GraphicSpeaker(AbstractSpeaker):
         self.signal = False
         exit(0)
 
+
     def write_action(self):
         command = self.get_input("Write command:")
         arg = self.get_input("Write argument:")

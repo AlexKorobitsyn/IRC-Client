@@ -44,10 +44,12 @@ class IRCClient:
             case "GUI":
                 self.server_communicator.speaker = \
                     GraphicSpeaker(self.server_communicator.serv_interact, self.server_communicator.user_interact)
+                self.server_communicator.speaker.make_logger()
                 self.user_interface = GUI(self.server_communicator.speaker, self.gui_controller)
             case "CUI":
                 self.server_communicator.speaker = \
                     CommandSpeaker(self.server_communicator.serv_interact, self.server_communicator.user_interact)
+                self.server_communicator.speaker.make_logger()
                 self.user_interface = CUI(self.server_communicator.speaker)
 
     def run(self):
