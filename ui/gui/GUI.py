@@ -3,10 +3,7 @@ from ui.UserInterface import UserInterface
 from ui.apps.ChannelInfoApp import ChannelInfoApp
 from ui.apps.ChatApp import ChatApp
 from ui.gui.GUIController import GUIController
-from ui.apps.InputApp import InputApp
 import customtkinter as ctk
-
-from ui.apps.OutputApp import OutputApp
 
 
 class GUI(UserInterface):

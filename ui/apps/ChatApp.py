@@ -36,7 +36,12 @@ class ChatApp(CTkToplevel):
     def get_server_response(self):
         if self.speaker.signal:
             try:
+                if self.speaker.logger.data_from_history != "":
+                    self.display_message(self.speaker.logger.data_from_history)
+                    self.speaker.logger.data_from_history = ""
+                    self.speaker.user_interact.had_history_to_load = False
                 data = self.speaker.get_server_response()
+                self.speaker.logger.save(data)
                 self.display_message(data)
             except TimeoutError:
                 pass

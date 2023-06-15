@@ -6,6 +6,19 @@ from server.ServerInteract import ServerInteract
 from user.UserInteract import UserInteract
 
 
+def get_help_text():
+    return 'It\'s Help.\n' \
+           'Available commands:\n' + \
+        'NAMES: Get a list of users in the current channel.\n' + \
+        'LIST: Get a list of available channels on the server.\n' + \
+        'JOIN: Join the specified channel.\n' + \
+        'HISTORY: Download message history.\n' + \
+        'CHNGNICK: Change nickname.\n' + \
+        'CHNGCHANNEL: Change current channel.\n' + \
+        'PRIVMSG: Send a private message to the user.\n' + \
+        'QUIT: Quit the IRC client.\n'
+
+
 class AbstractSpeaker(ABC):
     def __init__(self, serv_interact: ServerInteract, user_interact: UserInteract):
         self.signal = True
@@ -13,6 +26,7 @@ class AbstractSpeaker(ABC):
         self.serv_interact = serv_interact
         self.user_interact = user_interact
         self.quit_flag = False
+        self.help_text = get_help_text()
 
     def make_logger(self):
         self.logger = Logger()
@@ -37,6 +51,8 @@ class AbstractSpeaker(ABC):
                 self.quit_action()
             case "WRITE":
                 self.write_action()
+            case _:
+                self.help_action(self.help_text)
 
     @abstractmethod
     def names_action(self):
@@ -54,6 +70,10 @@ class AbstractSpeaker(ABC):
 
     @abstractmethod
     def chngnick_action(self):
+        pass
+
+    @abstractmethod
+    def help_action(self, text: str):
         pass
 
     @abstractmethod

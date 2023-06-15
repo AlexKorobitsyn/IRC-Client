@@ -63,7 +63,5 @@ class CommandSpeakerTestCase(unittest.TestCase):
         self.serv_interact_mock.send_to_server.assert_called_once_with("test_command", "test_argument")
 
 
-
-
 if __name__ == '__main__':
     unittest.main()
