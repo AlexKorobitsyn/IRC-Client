@@ -12,10 +12,13 @@ class GUI(UserInterface):
 
     def __init__(self, speaker: AbstractSpeaker, gui_controller: GUIController):
         super().__init__(speaker)
+        self.root = None
         self.gui_controller = gui_controller
 
     def display_input(self):
-        input_app = InputApp(ctk.CTk(), self.speaker)
+
+        self.root = ctk.CTk()
+        input_app = InputApp(self.root, self.speaker)
         input_app.wait_window()
 
     def display_output(self):

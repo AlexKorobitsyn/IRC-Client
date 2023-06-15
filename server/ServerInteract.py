@@ -31,6 +31,7 @@ class ServerInteract:
 
     def quit(self):
         self.send_to_server("QUIT", "Good bye!")  # TODO почему одно слово только???
+        exit(0)
 
     def set_password(self):
         command = "PASS"
@@ -45,5 +46,5 @@ class ServerInteract:
         self.sock.sendall(command)
 
     def get_response(self):
-        gog = self.sock.recv(1024)
-        return gog
+        chunk = self.sock.recv(1024)
+        return chunk
