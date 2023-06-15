@@ -5,10 +5,13 @@ from server.AbstractSpeaker import AbstractSpeaker
 from server.ServerCommunicator import ServerCommunicator
 
 
+
 class InputApp(CTkToplevel):
     def __init__(self, root, speaker: AbstractSpeaker):
         super().__init__(root)
         self.speaker = speaker
+
+
 
         # configure window
         self.title("Input App")
